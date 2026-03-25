@@ -1,0 +1,54 @@
+/*--------------------
+Events Pixi Hero
+--------------------*/
+.events-pixi-hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-bg, #0b0f14);
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#canvas canvas {
+    display: block;
+}
+
+.events-pixi-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    pointer-events: none;
+    /* Allows mouse interactions to pass through to Pixi canvas */
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    padding: 80px 20px 0;
+    /* Add top padding to account for fixed navbar */
+}
+
+.events-pixi-content .display-3 {
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: -1px;
+}
+
+.events-pixi-content .text-accent {
+    color: var(--accent-color, #7ed957);
+}
+
+.events-pixi-content .opacity-75 {
+    font-family: 'Inter', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}

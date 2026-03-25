@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fizzy | Premium Kombucha Brewery</title>
+    <meta name="description"
+        content="Authentic, organic, small-batch kombucha brewery. Fresh, fizzy, and alive brews for a healthy lifestyle.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Bootstrap CSS (Dynamic based on RTL) -->
+    <link id="bootstrap-link" rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span>The Fizzy</span>
+            </a>
+
+            <div class="d-flex align-items-center ms-auto">
+                <div class="theme-controls d-lg-none me-3">
+                    <button id="rtl-toggle-mob" class="control-btn" aria-label="Toggle RTL"><span
+                            class="rtl-text">LTR</span></button>
+                </div>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-inline-start-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button"
+                            data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu bg-dark border-secondary">
+                            <li><a class="dropdown-item text-white" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item text-white" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="flavors.html">Flavors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center ms-3">
+                    <a href="login.html" class="btn btn-outline-accent btn-sm me-3">Login</a>
+                    <div class="theme-controls d-none d-lg-flex">
+                        <button id="theme-toggle" class="control-btn" title="Toggle Dark/Light Mode"><i
+                                class="bi bi-sun"></i></button>
+                        <button id="rtl-toggle" class="control-btn" title="Toggle LTR/RTL"><span
+                                class="rtl-text">LTR</span></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fruity Inspired Hero Slider -->
+    <header id="fruity-hero">
+        <main class="fruity-main">
+            <!-- Navigation Buttons -->
+            <div class="slider-controls-wrap">
+                <button id="prevButton" class="slider-btn wave-btn"><i class="bi bi-chevron-left"></i></button>
+                <button id="nextButton" class="slider-btn wave-btn"><i class="bi bi-chevron-right"></i></button>
+            </div>
+
+            <!-- Animated Title Background -->
+            <div class="bg-title-wrap">
+                <h1 class="h1-bg">GINGER</h1>
+            </div>
+
+            <!-- Central Product -->
+            <div class="product-focus">
+                <div class="product-bottle-img">
+                    <img src="assets/images/hero_bottle.png" alt="Premium Kombucha" class="bottle-main">
+                </div>
+            </div>
+
+            <!-- Content Overlay -->
+            <div class="hero-content-overlay">
+                <div class="content-slider-strip">
+                    <section class="content-slide">
+                        <span class="premium-badge-mini">Spicy & Warm</span>
+                        <h2 class="flavor-main-title">Ginger <span class="text-accent">Turmeric</span></h2>
+                        <p class="flavor-lede">Bold, antioxidant-rich signature kick.</p>
+                        <a href="flavors.html" class="btn btn-accent-hero-mini">Order Ginger</a>
+                    </section>
+                    <section class="content-slide">
+                        <span class="premium-badge-mini">Sweet & Tangy</span>
+                        <h2 class="flavor-main-title">Wild <span class="text-accent">Berry</span> Bliss</h2>
+                        <p class="flavor-lede">Naturally sweet forest berry harvest.</p>
+                        <a href="flavors.html" class="btn btn-accent-hero-mini">Savor Berries</a>
+                    </section>
+                    <section class="content-slide">
+                        <span class="premium-badge-mini">Pure & Zen</span>
+                        <h2 class="flavor-main-title">Classic <span class="text-accent">Green</span> Tea</h2>
+                        <p class="flavor-lede">Raw, organic organic green tea fermentation.</p>
+                        <a href="flavors.html" class="btn btn-accent-hero-mini">Classic Zen</a>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Floating Ingredients -->
+            <div class="ingredients-viewport">
+                <div class="sections-strip">
+                    <!-- Section 1: Ginger -->
+                    <section class="ingredient-section" id="section1">
+                        <div class="floating-group">
+                            <div class="f-img f-img-1"><img src="assets/images/brew-ingredients.png" alt="Ginger"></div>
+                            <div class="f-img f-img-2"><img src="assets/images/brew-ingredients.png" alt="Ginger"></div>
+                            <div class="f-img f-img-3"><img src="assets/images/brew-ingredients.png" alt="Mint"></div>
+                            <div class="f-img f-img-4"><img src="assets/images/brew-ingredients.png" alt="Turmeric">
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Section 2: Berry -->
+                    <section class="ingredient-section" id="section2">
+                        <div class="floating-group">
+                            <div class="f-img f-img-1"><img src="assets/images/flavors.png" alt="Berry"></div>
+                            <div class="f-img f-img-2"><img src="assets/images/flavors.png" alt="Berry"></div>
+                            <div class="f-img f-img-3"><img src="assets/images/flavors.png" alt="Berry"></div>
+                            <div class="f-img f-img-4"><img src="assets/images/flavors.png" alt="Berry"></div>
+                        </div>
+                    </section>
+                    <!-- Section 3: Classic -->
+                    <section class="ingredient-section" id="section3">
+                        <div class="floating-group">
+                            <div class="f-img f-img-1"><img src="assets/images/farm-roots.png" alt="Tea"></div>
+                            <div class="f-img f-img-2"><img src="assets/images/farm-roots.png" alt="Tea"></div>
+                            <div class="f-img f-img-3"><img src="assets/images/farm-roots.png" alt="Tea"></div>
+                            <div class="f-img f-img-4"><img src="assets/images/farm-roots.png" alt="Tea"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </header>
+
+    <!-- Featured Flavors -->
+    <section class="section-padding bg-darker">
+        <div class="container text-center">
+            <h2 class="mb-5 animate-on-scroll">Trending <span class="text-accent">Brews</span></h2>
+            <div class="row g-4">
+                <!-- Flavor 1 -->
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="flavor-card flavor-ginger">
+                        <div class="flavor-image-container">
+                            <img src="assets/images/flavors.png" alt="Ginger & Turmeric" class="flavor-image">
+                        </div>
+                        <h3>Morning Glow</h3>
+                        <p class="opacity-75">Ginger & Organic Turmeric. The perfect spicy kick to start your day.</p>
+                        <a href="flavor-details.html" class="learn-more-btn">Learn More <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Flavor 2 -->
+                <div class="col-md-4 animate-on-scroll" style="animation-delay: 0.2s">
+                    <div class="flavor-card flavor-pulse">
+                        <div class="flavor-image-container">
+                            <img src="assets/images/flavors.png" alt="Wild Berry" class="flavor-image">
+                        </div>
+                        <h3>Wild Pulse</h3>
+                        <p class="opacity-75">Raspberry, Mint & Elderberry. A refreshing berry explosion.</p>
+                        <a href="flavor-details.html" class="learn-more-btn">Learn More <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Flavor 3 -->
+                <div class="col-md-4 animate-on-scroll" style="animation-delay: 0.4s">
+                    <div class="flavor-card flavor-zen">
+                        <div class="flavor-image-container">
+                            <img src="assets/images/flavors.png" alt="Green Tea" class="flavor-image">
+                        </div>
+                        <h3>Zen Garden</h3>
+                        <p class="opacity-75">Classic Green Tea with Jasmine. Pure, raw, and revitalizing.</p>
+                        <a href="flavor-details.html" class="learn-more-btn">Learn More <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <a href="flavors.html" class="btn btn-outline-accent">View All Flavors</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brewing Process (Wellness) -->
+    <section class="section-padding overflow-hidden wellness-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1 animate-on-scroll">
+                    <div class="wellness-image-container">
+                        <img src="assets/images/wellness_brew.png" alt="Pure Brewing"
+                            class="img-fluid rounded-circle shadow-lg border-accent border-4"
+                            style="aspect-ratio: 1/1; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 ps-lg-5 mb-5 mb-lg-0 animate-on-scroll">
+                    <div class="glass-card">
+                        <h2 class="mb-4">Brewed for <span class="text-accent">Wellness</span></h2>
+                        <p class="lead mb-4">We believe in the power of nature. Our kombucha is brewed using traditional
+                            methods
+                            and only 4 core ingredients.</p>
+                        <ul class="list-unstyled wellness-list mt-4">
+                            <li class="d-flex align-items-start">
+                                <i class="bi bi-check2-circle text-accent me-4"></i>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Small Batch Fermentation</h5>
+                                    <p class="opacity-75 mb-0 small">Ensuring consistent quality and maximum probiotic
+                                        potency.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start">
+                                <i class="bi bi-check2-circle text-accent me-4"></i>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Real Tea & Organic Sugar</h5>
+                                    <p class="opacity-75 mb-0 small">No artificial sweeteners or powders. Ever.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+    </div>
+    <!-- Sustainability & Sourcing -->
+    <section class="section-padding sustainability-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 animate-on-scroll">
+                    <span class="text-accent fw-bold text-uppercase letter-spacing-2">Our Roots</span>
+                    <h2 class="display-4 fw-bold mt-2 mb-4">Cultivating <span class="text-accent">Sustainability</span>
+                    </h2>
+                    <p class="lead opacity-75 mb-4">We source our tea from high-altitude organic gardens that prioritize
+                        biodiversity and fair labor. Every bottle of The Fizzy tells a story of respect for the
+                        Earth.</p>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <h2>100%</h2>
+                            <p class="mb-0 small text-uppercase fw-bold opacity-50">Organic</p>
+                        </div>
+                        <div class="stat-box">
+                            <h2>0%</h2>
+                            <p class="mb-0 small text-uppercase fw-bold opacity-50">Waste Goal</p>
+                        </div>
+                        <div class="stat-box">
+                            <h2>45+</h2>
+                            <p class="mb-0 small text-uppercase fw-bold opacity-50">Culture Strains</p>
+                        </div>
+                        <div class="stat-box">
+                            <h2>Local</h2>
+                            <p class="mb-0 small text-uppercase fw-bold opacity-50">Source First</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-scroll" style="animation-delay: 0.2s">
+                    <div class="sustainability-image-wrapper">
+                        <img src="assets/images/sustainability_roots.png" alt="Tea Garden" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Premium Events Section -->
+    <section class="section-padding bg-darker overflow-hidden">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h2 class="display-4 fw-bold">Upcoming <span class="text-accent">Experiences</span></h2>
+                <p class="opacity-75">Curated gatherings for the curious and the bold.</p>
+            </div>
+            <div class="row g-5">
+                <!-- Event 1 -->
+                <div class="col-lg-6 animate-on-scroll">
+                    <div class="event-card">
+                        <span class="event-badge">TASTING</span>
+                        <div class="event-image-wrapper">
+                            <img src="assets/images/event_tasting.png" alt="Saturday Sips">
+                            <div class="event-overlay"></div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Saturday Sips: The Gold Series</h3>
+                            <p class="opacity-75 mb-4">An exclusive afternoon dedicated to sampling our reserve batches.
+                                Discover the nuanced profiles of small-batch fermentation in an intimate setting.</p>
+                            <div class="event-footer">
+                                <div class="event-date">
+                                    <i class="bi bi-calendar3"></i> Every Saturday
+                                </div>
+                                <a href="events.html" class="event-btn">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="col-lg-6 animate-on-scroll" style="animation-delay: 0.2s">
+                    <div class="event-card">
+                        <span class="event-badge">WORKSHOP</span>
+                        <div class="event-image-wrapper">
+                            <img src="assets/images/event_workshop.png" alt="Home Brew 101">
+                            <div class="event-overlay"></div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Alchemy of Fizz: Masterclass</h3>
+                            <p class="opacity-75 mb-4">Master the traditional art of kombucha brewing. From SCOBY health
+                                to secondary fermentation, learn the secrets to the perfect home brew.</p>
+                            <div class="event-footer">
+                                <div class="event-date">
+                                    <i class="bi bi-calendar-check"></i> March 28th, 2026
+                                </div>
+                                <a href="events.html" class="event-btn">Book Seat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Taste Profile (Interactive-style) -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="flavor-profile-container animate-on-scroll">
+                    <div class="text-center mb-5">
+                        <h2 class="display-5 fw-bold mb-3">The Alchemy of <span class="text-accent">Taste</span></h2>
+                        <p class="opacity-75">Every bottle is a symphony of natural flavor notes.</p>
+                    </div>
+                    <div class="flavor-profile-grid">
+                        <!-- Note 1 -->
+                        <div class="flavor-node" style="--percent: 85%;">
+                            <div class="icon-circle">
+                                <i class="bi bi-wind"></i>
+                            </div>
+                            <h4>Zesty & Bright</h4>
+                            <p class="small opacity-75">High notes of fresh ginger and citrus zest that awaken the
+                                palate.</p>
+                            <div class="taste-meter">
+                                <div class="taste-fill"></div>
+                            </div>
+                            <small class="mt-2 d-block opacity-50">Intensity: 85%</small>
+                        </div>
+                        <!-- Note 2 -->
+                        <div class="flavor-node" style="--percent: 70%;">
+                            <div class="icon-circle">
+                                <i class="bi bi-flower1"></i>
+                            </div>
+                            <h4>Floral & Sweet</h4>
+                            <p class="small opacity-75">Delicate jasmine and elderberry profiles with a smooth finish.
+                            </p>
+                            <div class="taste-meter">
+                                <div class="taste-fill"></div>
+                            </div>
+                            <small class="mt-2 d-block opacity-50">Intensity: 70%</small>
+                        </div>
+                        <!-- Note 3 -->
+                        <div class="flavor-node" style="--percent: 90%;">
+                            <div class="icon-circle">
+                                <i class="bi bi-stars"></i>
+                            </div>
+                            <h4>Earthy & Raw</h4>
+                            <p class="small opacity-75">The deep, complex character of traditionally fermented black
+                                tea.</p>
+                            <div class="taste-meter">
+                                <div class="taste-fill"></div>
+                            </div>
+                            <small class="mt-2 d-block opacity-50">Intensity: 90%</small>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <img src="assets/images/flavor_profile.png" alt="Raw Ingredients"
+                            class="img-fluid rounded-circle opacity-25 mt-4"
+                            style="width: 150px; filter: grayscale(1);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <a class="navbar-brand d-inline-flex align-items-center mb-4" href="index.html">
+
+                            <span>The Fizzy</span>
+                        </a>
+                        <p class="opacity-75 mb-4">Dedicated to crafting authentic, organic kombucha that makes you feel
+                            alive. Visit our brewery and taste the difference.</p>
+                        <div class="social-links d-flex gap-3">
+                            <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                            <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x fs-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled mt-3">
+                            <li><a href="about.html" class="footer-link">Our Story</a></li>
+                            <li><a href="flavors.html" class="footer-link">Brews</a></li>
+                            <li><a href="blog.html" class="footer-link">Journal</a></li>
+                            <li><a href="contact.html" class="footer-link">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Brewery Hours</h5>
+                        <ul class="list-unstyled mt-3 opacity-75">
+                            <li class="mb-2">Mon - Fri: 10am - 8pm</li>
+                            <li class="mb-2">Saturday: 9am - 10pm</li>
+                            <li class="mb-2">Sunday: 11am - 6pm</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Newsletter</h5>
+                        <p class="opacity-75 mt-3">Get the latest brew releases and event updates.</p>
+                        <form class="mt-3">
+                            <div class="input-group">
+                                <input type="email" class="form-control bg-dark border-secondary text-white"
+                                    placeholder="your@email.com">
+                                <button class="btn btn-accent">Join</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr class="mt-5 border-secondary">
+                <div class="text-center mt-3 opacity-50">
+                    <p>&copy; 2026 The Fizzy Kombucha Brewery. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS + Popper JS Bundle -->
+        <!-- Bootstrap JS + Popper JS Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- GSAP and Slider Logic -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const h1Texts = ["GINGER", "BERRY", "CLASSIC"];
+                const logoColors = ["var(--ginger-logo)", "var(--berry-logo)", "var(--classic-logo)"];
+
+                const sectionsStrip = document.querySelector(".sections-strip");
+                const contentStrip = document.querySelector(".content-slider-strip");
+                const prevButton = document.getElementById("prevButton");
+                const nextButton = document.getElementById("nextButton");
+                const mainTitle = document.querySelector(".h1-bg");
+                const logoText = document.querySelector(".navbar-brand span");
+
+                let currentIndex = 0;
+
+                // Initial Floating Animation for all pieces
+                gsap.to(".f-img img", {
+                    x: "random(-30, 30)",
+                    y: "random(-30, 30)",
+                    duration: "random(2, 4)",
+                    ease: "sine.inOut",
+                    yoyo: true,
+                    repeat: -1,
+                    stagger: {
+                        amount: 2,
+                        from: "random"
+                    }
+                });
+
+                const updateSlider = () => {
+                    const offset = -currentIndex * 100;
+                    gsap.to([sectionsStrip, contentStrip], {
+                        x: `${offset}vw`,
+                        duration: 0.8,
+                        ease: "expo.out"
+                    });
+
+                    // Update Text and Colors
+                    gsap.to(logoText, { color: logoColors[currentIndex], duration: 0.5 });
+                    gsap.fromTo(mainTitle, { y: "20%", opacity: 0 }, {
+                        y: "0%",
+                        opacity: 0.15,
+                        duration: 0.5,
+                        onStart: () => { mainTitle.innerHTML = h1Texts[currentIndex]; }
+                    });
+
+                    // Button visibility
+                    prevButton.style.display = currentIndex === 0 ? "none" : "flex";
+                    nextButton.style.display = currentIndex === h1Texts.length - 1 ? "none" : "flex";
+
+                    // Update button colors
+                    if (currentIndex < h1Texts.length - 1) nextButton.style.color = logoColors[currentIndex + 1];
+                    if (currentIndex > 0) prevButton.style.color = logoColors[currentIndex - 1];
+                };
+
+                nextButton.addEventListener("click", () => {
+                    if (currentIndex < h1Texts.length - 1) {
+                        currentIndex++;
+                        updateSlider();
+                        gsap.from(".ingredient-section:nth-child(" + (currentIndex + 1) + ") .f-img", {
+                            y: "100vh",
+                            stagger: 0.1,
+                            duration: 0.8,
+                            ease: "power2.out"
+                        });
+                    }
+                });
+
+                prevButton.addEventListener("click", () => {
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                        updateSlider();
+                        gsap.from(".ingredient-section:nth-child(" + (currentIndex + 1) + ") .f-img", {
+                            y: "-100vh",
+                            stagger: 0.1,
+                            duration: 0.8,
+                            ease: "power2.out"
+                        });
+                    }
+                });
+            });
+        </script>
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+/* About Page: Creative Hero Design */
+.creative-hero--section {
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hero-section--bg {
+    background: #0b0f14;
+    border-radius: 0 0 60px 60px;
+    z-index: 1;
+    position: relative;
+    padding: 160px 0 120px;
+}
+
+.creative-hero--section .container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.creative-hero--section .hero-content {
+    animation: fadeInLeft 1s ease forwards;
+    opacity: 0;
+}
+
+.hero-content .hero-heading {
+    font-size: 82px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 1.05;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 25px;
+}
+
+.hero-content .text-lg {
+    font-size: 22px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 45px;
+    font-family: 'Inter', sans-serif;
+    max-width: 580px;
+}
+
+.creative-cta--wrap {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.creative-cta-btn {
+    margin-right: 40px;
+}
+
+.creative-cta-btn a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0 40px;
+    line-height: 56px;
+    border: 1px solid #fff;
+    position: relative;
+    display: inline-block;
+    background: transparent;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.creative-cta-btn a:before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    height: 12px;
+    width: calc(100% + 2px);
+    left: 6px;
+    transform: skewX(-45deg);
+    background: #fff;
+    transition: all .3s ease;
+}
+
+.creative-cta-btn a:after {
+    content: '';
+    position: absolute;
+    right: -13px;
+    height: calc(100% + 1px);
+    width: 12px;
+    top: -6px;
+    transform: skewY(-45deg);
+    background: #fff;
+    transition: all .3s ease;
+}
+
+.creative-cta-btn a:hover {
+    background: #7ed957;
+    color: #0b0f14;
+    border-color: #7ed957;
+}
+
+.creative-cta-btn a:hover:before,
+.creative-cta-btn a:hover:after {
+    background: #7ed957;
+}
+
+.creative-rating h3 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #7ed957;
+    line-height: 1.1;
+}
+
+.creative-rating p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.creative-hero--section .media-wrapper {
+    position: absolute;
+    background: radial-gradient(circle at 70% 50%, rgba(126, 217, 87, 0.15) 0%, transparent 70%);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 100px;
+}
+
+.media-wrapper .home-avatar {
+    max-width: 80%;
+    filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.6));
+    animation: float 6s ease-in-out infinite;
+}
+
+.media-wrapper .shape_01 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-content .hero-heading {
+        font-size: 60px;
+    }
+
+    .creative-hero--section .media-wrapper {
+        width: 40%;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-section--bg {
+        padding: 120px 0 80px;
+        text-align: center;
+        border-radius: 0 0 40px 40px;
+    }
+
+    .creative-hero--section .media-wrapper {
+        display: none;
+    }
+
+    .hero-content .text-lg {
+        margin: 0 auto 40px;
+    }
+
+    .creative-cta--wrap {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-content .hero-heading {
+        font-size: 40px;
+    }
+
+    .creative-cta-btn {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    .creative-cta-btn a {
+        width: 100%;
+    }
+}

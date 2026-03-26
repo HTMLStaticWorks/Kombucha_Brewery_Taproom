@@ -176,7 +176,7 @@
 .contact-hero .contact-badge,
 .contact-hero h1 span,
 .contact-hero h1,
-.contact-hero .avatar-group + span {
+.contact-hero .avatar-group+span {
     color: #fefefe;
     text-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
 }
@@ -343,8 +343,10 @@
 [data-theme="light"] .contact-hero .lead,
 [data-theme="light"] .contact-hero .text-accent,
 [data-theme="light"] .contact-hero .contact-badge,
-[data-theme="light"] .contact-hero .avatar-group + span {
-    color: #0b0f14;
+[data-theme="light"] .contact-hero .response-badge p,
+[data-theme="light"] .contact-hero .avatar-group+div p,
+[data-theme="light"] .contact-hero .avatar-group+span {
+    color: #0b0f14 !important;
     text-shadow: none;
 }
 

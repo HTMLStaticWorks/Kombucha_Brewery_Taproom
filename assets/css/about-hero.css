@@ -191,6 +191,21 @@
     }
 
     .creative-hero--section .media-wrapper {
+        display: flex;
+        position: relative;
+        width: 100%;
+        right: auto;
+        bottom: auto;
+        padding: 50px 0 0;
+        justify-content: center;
+        background: none;
+    }
+
+    .media-wrapper .home-avatar {
+        max-width: 280px;
+    }
+
+    .media-wrapper .shape_01 {
         display: none;
     }
 

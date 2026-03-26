@@ -197,6 +197,21 @@ body {
     transform: scale(1.1);
 }
 
+.portal-section .btn-accent {
+    background: var(--accent);
+    color: var(--primary-bg) !important;
+    border-radius: 99px;
+    box-shadow: 0 15px 35px rgba(126, 217, 87, 0.25);
+    transition: all 0.3s ease;
+}
+
+.portal-section .btn-accent:hover {
+    background: #fff;
+    color: #000 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 20px 45px rgba(255, 255, 255, 0.15);
+}
+
 /* SECTION 6: THE MEMBERSHIP PULSE */
 .pulse-section {
     padding: 8rem 0;

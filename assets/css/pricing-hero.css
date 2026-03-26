@@ -84,7 +84,8 @@
     background: linear-gradient(135deg, #7ed957 0%, #3faa1d 100%);
     color: #041203;
     border: none;
-    padding: 0.95rem 2.6rem;
+    padding: 1.1rem 2.8rem;
+    min-width: 240px;
 }
 
 .hero-cta .btn-accent:hover {
@@ -96,7 +97,8 @@
     border: 1px solid rgba(255, 255, 255, 0.4);
     background: transparent;
     color: #f8fbff;
-    padding: 0.85rem 2rem;
+    padding: 1rem 2.8rem;
+    min-width: 240px;
 }
 
 .hero-cta .btn-outline-light:hover {

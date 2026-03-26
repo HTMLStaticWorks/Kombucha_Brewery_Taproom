@@ -75,7 +75,7 @@ Skewed One Page Scroll Hero
     transition: transform 1s, opacity 1s;
     background-size: cover;
     background-position: center;
-    text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
 }
 
 .skw-page__half--left .skw-page__content {
@@ -202,13 +202,25 @@ Skewed One Page Scroll Hero
         padding: 0 10% !important;
     }
 }
-.blog-category-card {
-    transition: background 0.3s ease;
-}
 
 [data-theme="dark"] .blog-category-card {
     background-color: #1c2126;
     border-color: rgba(255, 255, 255, 0.15);
+}
+
+.newsletter-sidebar {
+    background-color: #7ed957;
+    color: #0b0f14;
+}
+
+[data-theme="dark"] .newsletter-sidebar {
+    background-color: #1c2126;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .newsletter-sidebar h4,
+[data-theme="dark"] .newsletter-sidebar p {
+    color: #f8fbff !important;
 }
 
 .blog-category-list li span {
@@ -232,6 +244,32 @@ Skewed One Page Scroll Hero
         #0b0f14;
     padding: 120px 0 80px;
     overflow: hidden;
+    color: #ffffff;
+}
+
+.blog-hero h1,
+.blog-hero p,
+.blog-hero .hero-lead,
+.blog-hero .hero-pretitle {
+    color: #ffffff !important;
+}
+
+.blog-hero-actions .btn-accent {
+    background-color: #7ed957;
+    border-color: #3faa1d;
+    color: #0b0f14 !important;
+    font-weight: 700;
+}
+
+.blog-hero-actions .btn-outline-light {
+    border: 1px solid #ffffff;
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+.blog-hero-actions .btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #0b0f14 !important;
 }
 
 .blog-hero-glow {

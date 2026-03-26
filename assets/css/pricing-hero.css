@@ -1,0 +1,143 @@
+.pricing-hero {
+    position: relative;
+    min-height: 90vh;
+    padding: 140px 0 120px;
+    background: radial-gradient(circle at top right, rgba(126, 217, 87, 0.35), rgba(11, 15, 20, 0) 50%),
+        #10121a;
+    overflow: hidden;
+    color: #f8fbff;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-hero-glow {
+    position: absolute;
+    inset: 15% 5% auto auto;
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, rgba(126, 217, 87, 0.4), rgba(126, 217, 87, 0));
+    filter: blur(18px);
+    z-index: 0;
+}
+
+.pricing-hero-grid {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero-visuals {
+    position: relative;
+    min-height: 450px;
+}
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 420px;
+}
+
+.hero-visual img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 28px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    animation: floatImage 8s ease-in-out infinite;
+}
+
+.hero-copy {
+    max-width: 480px;
+}
+
+.hero-tag {
+    display: inline-flex;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.85rem;
+    color: #7ed957;
+    margin-bottom: 1rem;
+}
+
+.hero-cta {
+    margin-top: 1.8rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-cta .btn {
+    border-radius: 999px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.35s ease;
+}
+
+.hero-cta .btn-accent {
+    background: linear-gradient(135deg, #7ed957 0%, #3faa1d 100%);
+    color: #041203;
+    border: none;
+    padding: 0.95rem 2.6rem;
+}
+
+.hero-cta .btn-accent:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(126, 217, 87, 0.35);
+}
+
+.hero-cta .btn-outline-light {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    color: #f8fbff;
+    padding: 0.85rem 2rem;
+}
+
+.hero-cta .btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.pricing-hero p {
+    font-size: 1.2rem;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 992px) {
+    .pricing-hero {
+        padding: 120px 0;
+    }
+
+    .floating-frame {
+        width: 180px;
+        height: 180px;
+    }
+
+    .frame-three {
+        top: 50%;
+        left: 70%;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+}

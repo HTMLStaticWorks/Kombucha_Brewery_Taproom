@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Laboratory | The Fizzy</title>
+    <meta name="description" content="Enter the fermentation lab of The Fizzy. High-performance probiotics.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link id="bootstrap-link" rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/home-2-new.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span>The Fizzy</span>
+            </a>
+
+            <div class="d-flex align-items-center ms-auto">
+                <div class="theme-controls d-lg-none me-3">
+                    <button id="rtl-toggle-mob" class="control-btn" aria-label="Toggle RTL"><span
+                            class="rtl-text">LTR</span></button>
+                </div>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-inline-start-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button"
+                            data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu bg-dark border-secondary">
+                            <li><a class="dropdown-item text-white" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item text-white active" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="flavors.html">Flavors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center ms-3">
+                    <a href="login.html" class="btn btn-outline-accent btn-sm me-3">Login</a>
+                    <div class="theme-controls d-none d-lg-flex">
+                        <button id="theme-toggle" class="control-btn" title="Toggle Dark/Light Mode"><i
+                                class="bi bi-sun"></i></button>
+                        <button id="rtl-toggle" class="control-btn" title="Toggle LTR/RTL"><span
+                                class="rtl-text">LTR</span></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO (THE SCOBY'S PULSE) -->
+    <section class="new-hero">
+        <div class="hero-visual-bg"></div>
+        <div class="living-particles">
+            <!-- Simulated via JS or simple floating spans -->
+            <div class="pulse-glow position-absolute top-50 start-50 translate-middle"
+                style="width:60vw; height:60vw; background:radial-gradient(circle, rgba(126, 217, 87, 0.05) 0%, transparent 60%);">
+            </div>
+        </div>
+
+        <div class="hero-content-wrap">
+            <h1 class="hero-title-main">
+                DECODING <br> <span>VITALITY.</span>
+            </h1>
+        </div>
+
+        <div class="hero-bottle-wrap">
+            <img src="assets/images/hero_bottle.png" alt="Pure Elixir" class="hero-bottle-img">
+        </div>
+
+        <div class="scroll-down-indicator position-absolute bottom-0 start-50 translate-middle p-5 opacity-50">
+            <div class="d-flex flex-column align-items-center">
+                <span class="small text-uppercase mb-2 letter-spacing-2">Synchronize</span>
+                <i class="bi bi-arrow-down fs-4 animate-bounce"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: BIOMETRIC INTELLIGENCE (THE PULSE) -->
+    <section class="intelligence-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card gs-reveal">
+                        <div class="stat-number">3.2</div>
+                        <h5 class="text-uppercase opacity-50 small letter-spacing-2">PH BALANCE</h5>
+                        <p class="small mt-3">The singular point of perfect crispness and culture health.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card gs-reveal" style="transition-delay: 0.1s">
+                        <div class="stat-number">40B</div>
+                        <h5 class="text-uppercase opacity-50 small letter-spacing-2">LIVE CULTURES</h5>
+                        <p class="small mt-3">Active probiotic colonies in every single vintage bottle.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card gs-reveal" style="transition-delay: 0.2s">
+                        <div class="stat-number">14D</div>
+                        <h5 class="text-uppercase opacity-50 small letter-spacing-2">FERMENT CYCLE</h5>
+                        <p class="small mt-3">The slow, artisanal transformation of organic tea leaves.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card gs-reveal" style="transition-delay: 0.3s">
+                        <div class="stat-number">0.0</div>
+                        <h5 class="text-uppercase opacity-50 small letter-spacing-2">ARTIFICIALS</h5>
+                        <p class="small mt-3">100% Raw. 100% Organic. Never pasteurized. Never filtered.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: THE JOURNEY (FERMENTATION CYCLE) -->
+    <section class="cycle-section overflow-hidden">
+        <div class="container">
+            <div class="text-center mb-5 pb-5">
+                <h2 class="display-3 fw-bold gs-reveal">The <span class="text-accent">Evolution</span> Cycle</h2>
+            </div>
+
+            <div class="position-relative">
+                <div class="cycle-line gs-reveal"></div>
+
+                <!-- Step 1 -->
+                <div class="row align-items-center mb-5 cycle-step">
+                    <div class="cycle-dot"></div>
+                    <div class="col-md-5 text-md-end pe-md-5 gs-reveal-left">
+                        <h3 class="fw-bold">01. Infusion</h3>
+                        <p class="opacity-75">Organic high-altitude black tea meets mineral-rich volcanic water. The
+                            foundation of life.</p>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5 ps-md-5 gs-reveal-right">
+                        <img src="assets/images/brew-ingredients.png" alt="Infusion"
+                            class="img-fluid rounded-4 shadow-lg grayscale">
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="row align-items-center mb-5 cycle-step">
+                    <div class="cycle-dot"></div>
+                    <div class="col-md-5 order-2 order-md-1 text-md-end pe-md-5 gs-reveal-left">
+                        <img src="assets/images/event_workshop_brewing.png" alt="Evolution"
+                            class="img-fluid rounded-4 shadow-lg grayscale">
+                    </div>
+                    <div class="col-md-2 order-2 order-md-2"></div>
+                    <div class="col-md-5 order-1 order-md-3 ps-md-5 gs-reveal-right">
+                        <h3 class="fw-bold">02. Symbiosis</h3>
+                        <p class="opacity-75">The introduction of our decades-old heirloom SCOBY. A 240-hour metabolic
+                            dance of bacteria and yeast.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="row align-items-center cycle-step">
+                    <div class="cycle-dot"></div>
+                    <div class="col-md-5 text-md-end pe-md-5 gs-reveal-left">
+                        <h3 class="fw-bold">03. Bottling</h3>
+                        <p class="opacity-75">Secondary fermentation begins in glass. Naturally building the fine,
+                            champagne-like carbonation.</p>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5 ps-md-5 gs-reveal-right">
+                        <img src="assets/images/flavor_profile.png" alt="Bottling"
+                            class="img-fluid rounded-4 shadow-lg grayscale">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION 5: THE GATEWAY (PORTAL) -->
+    <section class="portal-section section-padding">
+        <div class="container">
+            <div class="row g-0 align-items-center bg-darker rounded-5 shadow-2xl overflow-hidden">
+                <div class="col-lg-6 portal-img-container gs-reveal-left">
+                    <img src="assets/images/taproom-interior.png" alt="Taproom" class="portal-img">
+                </div>
+                <div class="col-lg-6 p-5 p-lg-10 gs-reveal-right">
+                    <div class="p-lg-5">
+                        <h2 class="display-2 fw-bold mb-4">The <span class="text-accent">Gateway</span></h2>
+                        <p class="fs-4 opacity-75 mb-5">Our taproom is the physical manifestation of our lab. Experience
+                            the brews as they were intended—raw, fresh, and straight from the source tanks.</p>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-center gap-3 glass-card p-3">
+                                <i class="bi bi-geo-alt-fill text-accent fs-3"></i>
+                                <span>45 Fizz Lane, Brewing District</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 glass-card p-3">
+                                <i class="bi bi-clock-fill text-accent fs-3"></i>
+                                <span>Tue - Sun: 12:00 — 22:00</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-accent btn-lg w-100 mt-5 py-3 fw-bold">Schedule an
+                            Induction Tour</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: THE SUSTENANCE (MEMBERSHIP PULSE) -->
+    <section class="pulse-section">
+        <div class="container text-center">
+            <div class="premium-pricing-card mx-auto gs-reveal" style="max-width: 900px;">
+                <div class="pricing-glow"></div>
+                <span class="text-accent fw-bold text-uppercase letter-spacing-2 mb-4 d-block">The Living Ritual</span>
+                <h2 class="display-2 fw-bold mb-5">Constant <span class="text-accent italic">Vitality</span></h2>
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-start">
+                        <p class="fs-5 opacity-75">Never interrupt the flow. Join our lab subscription for guaranteed
+                            weekly batch releases delivered in zero-emission vessels.</p>
+                    </div>
+                    <div class="col-lg-4 py-5">
+                        <div class="display-1 fw-bold">$45</div>
+                        <div class="opacity-50 text-uppercase small letter-spacing-2">Per Month</div>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="list-unstyled text-start mb-5 small opacity-75">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i> 12 Hand-Bottled
+                                Vintages</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i> Priority Seasonal
+                                Access</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i> Private Lab
+                                Archives</li>
+                        </ul>
+                        <a href="pricing.html" class="btn btn-accent w-100 py-3 fw-bold">Register Pulse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-inline-flex align-items-center mb-4" href="index.html">
+                        <span>The Fizzy</span>
+                    </a>
+                    <p class="opacity-75 mb-4">Dedicated to crafting authentic, organic kombucha that makes you feel
+                        alive. Visit our brewery and taste the difference.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li><a href="about.html" class="footer-link">Our Story</a></li>
+                        <li><a href="flavors.html" class="footer-link">Brews</a></li>
+                        <li><a href="blog.html" class="footer-link">Journal</a></li>
+                        <li><a href="contact.html" class="footer-link">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Brewery Hours</h5>
+                    <ul class="list-unstyled mt-3 opacity-75">
+                        <li class="mb-2">Mon - Fri: 10am - 8pm</li>
+                        <li class="mb-2">Saturday: 9am - 10pm</li>
+                        <li class="mb-2">Sunday: 11am - 6pm</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Newsletter</h5>
+                    <p class="opacity-75 mt-3">Get the latest brew releases and event updates.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-dark border-secondary text-white"
+                                placeholder="your@email.com">
+                            <button class="btn btn-accent">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary">
+            <div class="text-center mt-3 opacity-50">
+                <p>&copy; 2026 The Fizzy Kombucha Brewery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

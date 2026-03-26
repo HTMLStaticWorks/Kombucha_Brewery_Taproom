@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | The Fizzy</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link id="bootstrap-link" rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/pricing-hero.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header (Consistent) -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container pb-3">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span>The Fizzy</span>
+            </a>
+
+            <div class="d-flex align-items-center ms-auto">
+                <div class="theme-controls d-lg-none me-3">
+                    <button id="rtl-toggle-mob" class="control-btn" aria-label="Toggle RTL"><span
+                            class="rtl-text">LTR</span></button>
+                </div>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-inline-start-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu bg-dark border-secondary">
+                            <li><a class="dropdown-item text-white" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item text-white" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="flavors.html">Flavors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-3">
+                    <a href="login.html" class="btn btn-outline-accent btn-sm me-3">Login</a>
+                    <div class="theme-controls d-none d-lg-flex">
+                        <button id="theme-toggle" class="control-btn"><i class="bi bi-sun"></i></button>
+                        <button id="rtl-toggle" class="control-btn"><span class="rtl-text">LTR</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pricing Hero -->
+    <section class="pricing-hero">
+        <div class="pricing-hero-glow"></div>
+        <div class="pricing-hero-grid">
+            <div class="hero-visual">
+                <img src="assets/images/hero_bottle.png" alt="Premium Kombucha">
+            </div>
+            <div class="hero-copy">
+                <span class="hero-tag">Elevate your ritual</span>
+                <h1 class="display-3 fw-bold mb-3">Subscribe to <span class="text-accent">Living</span> Brews</h1>
+                <p class="lead opacity-75">
+                    Choose a membership tier that delivers curated, seasonal kombucha straight to your doorstep with
+                    live, probiotic-rich bottles for daily wellness.
+                </p>
+                <div class="hero-cta">
+                    <a href="#pricing-plans" class="btn btn-accent btn-lg px-5">Explore Plans</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg px-4">Book a Tasting</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing-plans" class="section-padding">
+        <div class="container overflow-visible">
+            <div class="text-center mb-5 animate-on-scroll">
+                <span class="text-accent fw-bold text-uppercase letter-spacing-2">Subscription & Packs</span>
+                <h2 class="display-3 fw-bold mt-3">Choose Your <span class="text-accent">Brew Ritual</span></h2>
+            </div>
+
+            <div class="row g-5 align-items-stretch mt-5">
+                <!-- Plan 1 -->
+                <div class="col-lg-4 animate-on-scroll">
+                    <div class="pricing-card">
+                        <h4 class="mb-4">Taster <br> Pack</h4>
+                        <div class="price">$22</div>
+                        <p class="opacity-75 mb-5">Try 4 of our most popular core flavors. Perfect for beginners.</p>
+                        <ul class="list-unstyled features-list">
+                            <li><i class="bi bi-check-circle-fill text-accent"></i> 4x 330ml Glass Bottles</li>
+                            <li><i class="bi bi-check-circle-fill text-accent"></i> Core Range Only</li>
+                            <li><i class="bi bi-check-circle-fill text-accent"></i> Pick up from Brewery</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-accent w-100 mt-auto">Choose Pack</a>
+                    </div>
+                </div>
+
+                <!-- Plan 2 (Featured) -->
+                <div class="col-lg-4 animate-on-scroll" style="animation-delay: 0.1s">
+                    <div class="pricing-card featured-card shadow-lg">
+                        <span class="badge bg-accent text-dark mb-4 py-2 px-3 fw-bold">BEST VALUE</span>
+                        <h4 class="mb-4">Monthly <br> Fizz</h4>
+                        <div class="price">$45 <small class="fs-6 opacity-50">/ month</small></div>
+                        <p class="opacity-75 mb-5">Our monthly subscription box. 12 bottles of mixed flavors.</p>
+                        <ul class="list-unstyled features-list">
+                            <li><i class="bi bi-check-circle-fill text-accent"></i> 12x 330ml Glass Bottles</li>
+                            <li><i class="bi bi-check-circle-fill text-accent"></i> Core + Seasonal Flavors</li>
+                            <li><i class="bi bi-check-circle-fill text-accent"></i> Free Local Delivery</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-accent w-100 mt-auto">Subscribe Now</a>
+                    </div>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="col-lg-4 animate-on-scroll" style="animation-delay: 0.2s">
+                    <div class="pricing-card">
+                        <h4 class="mb-4">Master <br> Brewer</h4>
+                        <div class="price">$80 <small class="fs-6 opacity-50">/ month</small></div>
+                        <p class="opacity-75 mb-5">For the ultimate kombucha lover. Maximum varieties + exclusive perks.
+                        </p>
+                        <ul class="list-unstyled features-list">
+                            <li><i class="bi bi-check-circle-fill text-accent"></i> 24x 330ml Glass Bottles</li>
+                            <li><i class="bi bi-check-circle-fill text-accent"></i> All Seasonal & Limited</li>
+                            <li><i class="bi bi-check-circle-fill text-accent"></i> First access to new brews</li>
+                            <li><i class="bi bi-check-circle-fill text-accent"></i> 20% Off Merch</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-accent w-100 mt-auto">Go Professional</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscriber Perks Section -->
+    <section class="perks-section">
+        <div class="container text-center animate-on-scroll">
+            <span class="text-accent fw-bold text-uppercase letter-spacing-2">Subscriber Exclusive</span>
+            <h2 class="display-3 fw-bold mt-3">Beyond <span class="text-accent">the Bottle</span></h2>
+
+            <div class="perk-circle-grid">
+                <div class="perk-circle animate-on-scroll">
+                    <i class="bi bi-stars"></i>
+                    <span>Exclusive <br> Small Batches</span>
+                </div>
+                <div class="perk-circle animate-on-scroll" style="animation-delay: 0.1s">
+                    <i class="bi bi-box-seam"></i>
+                    <span>Zero-Waste <br> Refills</span>
+                </div>
+                <div class="perk-circle animate-on-scroll" style="animation-delay: 0.2s">
+                    <i class="bi bi-calendar-event"></i>
+                    <span>Priority <br> Workshop Access</span>
+                </div>
+                <div class="perk-circle animate-on-scroll" style="animation-delay: 0.3s">
+                    <i class="bi bi-person-badge"></i>
+                    <span>Brewmaster <br> Consultations</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wholesale Section -->
+    <section class="wholesale-section">
+        <div class="container animate-on-scroll">
+            <div class="wholesale-banner">
+                <div class="wholesale-img-container">
+                    <img src="assets/images/wholesale_partner.png" alt="Wholesale Partnership" class="wholesale-img">
+                </div>
+                <div class="wholesale-content">
+                    <span class="wholesale-badge">B2B Opportunities</span>
+                    <h2>Brewing for <br> <span class="text-accent">Business Rituals</span></h2>
+                    <p class="fs-5 opacity-75 mb-5">Elevate your establishment's menu with our artisanal living
+                        ferments.
+                        We provide scalable wholesale solutions for restaurants, cafes, and creative studios.</p>
+                    <ul class="list-unstyled mb-5 opacity-75">
+                        <li class="mb-3"><i class="bi bi-check2-circle text-accent me-3"></i> Custom Tap Installations
+                        </li>
+                        <li class="mb-3"><i class="bi bi-check2-circle text-accent me-3"></i> Dedicated Account Ritual
+                        </li>
+                        <li class="mb-3"><i class="bi bi-check2-circle text-accent me-3"></i> Staff Training & Education
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-accent btn-lg px-5">Partner With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-inline-flex align-items-center mb-4" href="index.html">
+                        <span>The Fizzy</span>
+                    </a>
+                    <p class="opacity-75 mb-4">Dedicated to crafting authentic, organic kombucha that makes you feel
+                        alive. Visit our brewery and taste the difference.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li><a href="about.html" class="footer-link">Our Story</a></li>
+                        <li><a href="flavors.html" class="footer-link">Brews</a></li>
+                        <li><a href="blog.html" class="footer-link">Journal</a></li>
+                        <li><a href="contact.html" class="footer-link">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Brewery Hours</h5>
+                    <ul class="list-unstyled mt-3 opacity-75">
+                        <li class="mb-2">Mon - Fri: 10am - 8pm</li>
+                        <li class="mb-2">Saturday: 9am - 10pm</li>
+                        <li class="mb-2">Sunday: 11am - 6pm</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Newsletter</h5>
+                    <p class="opacity-75 mt-3">Get the latest brew releases and event updates.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-dark border-secondary text-white"
+                                placeholder="your@email.com">
+                            <button class="btn btn-accent">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary">
+            <div class="text-center mt-3 opacity-50">
+                <p>&copy; 2026 The Fizzy Kombucha Brewery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

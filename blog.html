@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | The Fizzy</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link id="bootstrap-link" rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/blog-skew.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header (Consistent) -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container pb-3">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span>The Fizzy</span>
+            </a>
+
+            <div class="d-flex align-items-center ms-auto">
+                <div class="theme-controls d-lg-none me-3">
+                    <button id="rtl-toggle-mob" class="control-btn" aria-label="Toggle RTL"><span
+                            class="rtl-text">LTR</span></button>
+                </div>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-inline-start-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu bg-dark border-secondary">
+                            <li><a class="dropdown-item text-white" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item text-white" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="flavors.html">Flavors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-3">
+                    <a href="login.html" class="btn btn-outline-accent btn-sm me-3">Login</a>
+                    <div class="theme-controls d-none d-lg-flex">
+                        <button id="theme-toggle" class="control-btn"><i class="bi bi-sun"></i></button>
+                        <button id="rtl-toggle" class="control-btn"><span class="rtl-text">LTR</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="blog-hero-glow"></div>
+        <div class="container blog-hero-wrap">
+            <div class="blog-hero-content">
+                <p class="hero-pretitle">Brew Journal</p>
+                <h1>Stories that keep <span class="text-accent">kombucha alive</span></h1>
+                <p class="lead">
+                    We share the rituals, science, and people behind our living brews—from rural tea gardens to the
+                    taproom.
+                </p>
+                <div class="blog-hero-actions">
+                    <a href="#articles" class="btn btn-accent btn-lg">Read the Journal</a>
+                    <a href="events.html" class="btn btn-outline-light btn-lg">Visit the Taproom</a>
+                </div>
+            </div>
+            <div class="blog-hero-image">
+                <div class="image-frame">
+                    <img src="assets/images/event_lounge_interior.png" alt="Creative Brew">
+                </div>
+                <div class="floating-orb"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Featured Section -->
+    <section id="premium-peek" class="bg-darker section-padding">
+        <div class="container">
+            <div class="glass-card overflow-hidden position-relative p-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0 animate-on-scroll">
+                        <span class="premium-tag mb-3 d-inline-block">Editorial Pick</span>
+                        <h2 class="display-4 fw-bold mb-4">The Micro-Universe of <span
+                                class="text-accent">Fermentation</span></h2>
+                        <p class="lead opacity-75 mb-4">Beyond the bubbles and the bite lies a complex dance of life.
+                            Our newest research explains how the SCOBY interacts with organic tea leaves to create the
+                            perfect elixir.</p>
+                        <div class="d-flex gap-3 mt-4">
+                            <a href="blog-details.html" class="btn btn-accent px-5">Continue Reading</a>
+                            <button class="btn btn-outline-light rounded-circle border-secondary"><i
+                                    class="bi bi-star"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center animate-on-scroll" style="animation-delay: 0.2s">
+                        <div class="peek-image-container">
+                            <img src="assets/images/premium-editorial.png" alt="Fermentation Secret"
+                                class="img-fluid rounded-4 shadow-lg border border-secondary p-1 bg-dark">
+                            <div class="peek-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Container -->
+    <section class="section-padding" id="blog-articles">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Blog Preview Main -->
+                <div class="col-lg-8 animate-on-scroll">
+                    <article class="mb-5 rounded-4 overflow-hidden border border-secondary shadow-sm">
+                        <img src="assets/images/wellness_brew.png" alt="Blog Wellness"
+                            class="img-fluid w-100 d-block shadow-lg" style="max-height: 600px; object-fit: cover;">
+                        <div class="p-5 text-center d-flex flex-column align-items-center">
+                            <span class="text-accent fw-bold text-uppercase small mb-2">Health & Wellness</span>
+                            <h2 class="display-4 fw-bold mb-4"><a href="blog-details.html">Why Probiotics are
+                                    Your Best Friend</a></h2>
+                            <p class="opacity-75 fs-5 max-width-600 mb-4">Kombucha is more than just a fizzy drink. It’s
+                                a centuries-old tradition that supports your gut health and boosts your immunity.</p>
+                        <a href="blog-details.html" class="btn btn-accent px-5 continue-reading-btn">Continue Reading Story</a>
+                        </div>
+                    </article>
+
+                    <hr class="border-secondary my-5">
+
+                    <!-- Blog Preview 2 -->
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-5">
+                            <img src="assets/images/flavors.png" alt="Blog 2"
+                                class="img-fluid rounded-4 h-100 object-fit-cover shadow">
+                        </div>
+                        <div class="col-md-7">
+                            <span class="text-accent fw-bold text-uppercase small">Brewing Secrets</span>
+                            <h3 class="mt-2"><a href="blog-details.html">The Perfect Fizz: Mastering
+                                    Secondary Fermentation</a></h3>
+                            <p class="opacity-75">Getting that signature sparkle at home can be tricky. Here are Leo’s
+                                top 5 tips for the best carbonation in every bottle.</p>
+                            <a href="blog-details.html" class="text-accent fw-bold blog-card-link">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Preview 3 -->
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-5">
+                            <img src="assets/images/sustainability_roots.png" alt="Blog Sustainability"
+                                class="img-fluid rounded-4 h-100 object-fit-cover shadow">
+                        </div>
+                        <div class="col-md-7">
+                            <span class="text-accent fw-bold text-uppercase small">Sustainability</span>
+                            <h3 class="mt-2"><a href="blog-details.html">Our Zero-Waste Journey: From
+                                    Tea Leaves to Compost</a></h3>
+                            <p class="opacity-75">Learn how we repurposed 1,000kg of organic waste last year into the
+                                brewery’s community garden.</p>
+                            <a href="blog-details.html" class="text-accent fw-bold blog-card-link">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4 animate-on-scroll" style="animation-delay: 0.3s">
+                    <div class="bg-secondary p-4 rounded-4 border border-secondary mb-5 shadow-sm blog-category-card">
+                        <h4 class="mb-4">Categories</h4>
+                        <ul class="list-unstyled blog-category-list">
+                            <li class="mb-3 text-accent fw-bold p-2 bg-dark rounded d-flex justify-content-between">
+                                <span>Wellness</span> <span>12</span>
+                            </li>
+                            <li
+                                class="mb-3 p-2 d-flex justify-content-between opacity-75 border-bottom border-secondary">
+                                <span>Brewing</span>
+                                <span>8</span>
+                            </li>
+                            <li
+                                class="mb-3 p-2 d-flex justify-content-between opacity-75 border-bottom border-secondary">
+                                <span>Events</span>
+                                <span>5</span>
+                            </li>
+                            <li
+                                class="mb-3 p-2 d-flex justify-content-between opacity-75 border-bottom border-secondary">
+                                <span>Life at Brewery</span>
+                                <span>15</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-accent p-4 rounded-4 text-dark mb-5">
+                        <h4 class="mb-3">Get the Brews Weekly</h4>
+                        <p class="small mb-4">Join our community and get fresh fermentation tips delivered to your inbox
+                            every Friday.</p>
+                        <form>
+                            <input type="email" class="form-control mb-3 border-0 bg-white"
+                                placeholder="your@email.com">
+                            <button class="btn btn-primary w-100">Subscribe</button>
+                        </form>
+                    </div>
+
+                    <div>
+                        <h4 class="mb-4">Follow Us</h4>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="btn btn-outline-accent rounded-circle"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a href="#" class="btn btn-outline-accent rounded-circle"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="btn btn-outline-accent rounded-circle"><i
+                                    class="bi bi-twitter-x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Harvest Bento Section -->
+    <section id="seasonal-harvest" class="bg-primary section-padding border-top border-secondary">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 animate-on-scroll seasonal-heading">
+                    <span class="premium-tag mb-3 d-inline-block">Seasonal Notes</span>
+                    <h2 class="display-3 fw-bold mb-4">Our <span class="text-accent">Harvest</span> Rhythm</h2>
+                </div>
+                <div class="col-lg-6 animate-on-scroll" style="animation-delay: 0.2s">
+                    <p class="lead opacity-75">Each month, we source the freshest botanicals and fruits from local
+                        organic farms. Our brews follow the seasons, not the markets. Discover the essence of the
+                        current month in every bottle.</p>
+                </div>
+            </div>
+
+            <div class="harvest-grid">
+                <div class="harvest-item large animate-on-scroll">
+                    <img src="assets/images/brew-ingredients.png" alt="Ingredients" class="harvest-img">
+                    <div class="harvest-overlay">
+                        <h4 class="mb-2">Spring Botanicals</h4>
+                        <p class="small opacity-75">Lavender & Lemongrass Blend</p>
+                    </div>
+                    <div class="harvest-tag">Available Now</div>
+                </div>
+                <div class="harvest-item small animate-on-scroll" style="animation-delay: 0.2s">
+                    <div class="glass-card h-100 d-flex flex-column justify-content-center p-4">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="icon-sm bg-accent rounded-circle p-2 text-dark"><i
+                                    class="bi bi-calendar-check fs-4"></i></div>
+                            <h5 class="mb-0">Next Batch</h5>
+                        </div>
+                        <p class="small opacity-75">Organic White Peach & Ginger infusion arriving this April.</p>
+                        <a href="#" class="text-accent small fw-bold harvest-note-link">Pre-order Now <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="harvest-item small animate-on-scroll" style="animation-delay: 0.4s">
+                    <img src="assets/images/farm-roots.png" alt="Local Harvest" class="harvest-img">
+                    <div class="harvest-overlay p-4">
+                        <h5 class="mb-0 text-white">Local Farm Roots</h5>
+                        <p class="small opacity-75 text-white">Directly from our local partners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-inline-flex align-items-center mb-4" href="index.html">
+                        <span>The Fizzy</span>
+                    </a>
+                    <p class="opacity-75 mb-4">Dedicated to crafting authentic, organic kombucha that makes you feel
+                        alive. Visit our brewery and taste the difference.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li><a href="about.html" class="footer-link">Our Story</a></li>
+                        <li><a href="flavors.html" class="footer-link">Brews</a></li>
+                        <li><a href="blog.html" class="footer-link">Journal</a></li>
+                        <li><a href="contact.html" class="footer-link">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Brewery Hours</h5>
+                    <ul class="list-unstyled mt-3 opacity-75">
+                        <li class="mb-2">Mon - Fri: 10am - 8pm</li>
+                        <li class="mb-2">Saturday: 9am - 10pm</li>
+                        <li class="mb-2">Sunday: 11am - 6pm</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Newsletter</h5>
+                    <p class="opacity-75 mt-3">Get the latest brew releases and event updates.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-dark border-secondary text-white"
+                                placeholder="your@email.com">
+                            <button class="btn btn-accent">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary">
+            <div class="text-center mt-3 opacity-50">
+                <p>&copy; 2026 The Fizzy Kombucha Brewery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/blog-skew.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+/*--------------------
+Home 2 (The Laboratory Edition) Styles
+--------------------*/
+
+:root {
+    --accent: #7ed957;
+    --primary-bg: #0b0f14;
+    --secondary-bg: #1a2634;
+    --glass: rgba(255, 255, 255, 0.05);
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* SECTION 1: HERO (THE CORE ELIXIR) */
+.new-hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-visual-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, #1a2634 0%, #0b0f14 70%);
+    z-index: 1;
+}
+
+.living-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.hero-bottle-wrap {
+    position: relative;
+    z-index: 5;
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.hero-bottle-img {
+    height: 70vh;
+    filter: drop-shadow(0 0 50px rgba(126, 217, 87, 0.2));
+}
+
+.hero-content-wrap {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.hero-title-main {
+    font-size: 12vw;
+    font-weight: 900;
+    font-family: 'Outfit', sans-serif;
+    line-height: 0.85;
+    letter-spacing: -5px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    position: relative;
+    margin: 0;
+}
+
+.hero-title-main span {
+    color: #fff;
+    -webkit-text-stroke: 0;
+}
+
+/* SECTION 2: THE INTELLIGENCE GRID */
+.intelligence-section {
+    position: relative;
+    z-index: 20;
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+
+.stat-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 5%, rgba(255, 255, 255, 0.02) 100%);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    height: 100%;
+    color: var(--text-color);
+}
+
+.intelligence-section .row {
+    align-items: stretch;
+}
+
+.stat-card:hover {
+    background: rgba(126, 217, 87, 0.1);
+    border-color: var(--accent);
+    transform: translateY(-10px);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    font-family: 'Outfit';
+}
+
+.stat-card h5,
+.stat-card p {
+    text-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* SECTION 3: THE FERMENTATION CYCLE (TIMELINE) */
+.cycle-section {
+    padding: 10rem 0;
+}
+
+.cycle-step {
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+.cycle-dot {
+    width: 20px;
+    height: 20px;
+    background: var(--accent);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    box-shadow: 0 0 20px var(--accent);
+}
+
+.cycle-line {
+    width: 2px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .cycle-step {
+        padding-left: 3rem;
+    }
+
+    .cycle-dot,
+    .cycle-line {
+        left: 2rem;
+    }
+}
+
+/* SECTION 4: THE CURATOR'S SELECTION (MOVED BELOW) */
+
+
+/* SECTION 5: THE TAPROOM PORTAL */
+.portal-section {
+    position: relative;
+    background: var(--primary-bg);
+}
+
+.portal-img-container {
+    padding: 2rem;
+}
+
+.portal-img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 30px;
+    transition: transform 1s;
+}
+
+.portal-section:hover .portal-img {
+    transform: scale(1.1);
+}
+
+/* SECTION 6: THE MEMBERSHIP PULSE */
+.pulse-section {
+    padding: 8rem 0;
+    background: linear-gradient(to bottom, #0b0f14, #000);
+}
+
+.premium-pricing-card {
+    background: linear-gradient(rgba(11, 15, 20, 0.8), rgba(0, 0, 0, 0.85)), url('../images/premium-editorial.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    padding: 5rem 4rem;
+    border: 1px solid rgba(126, 217, 87, 0.3);
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.7);
+}
+
+.premium-pricing-card h2,
+.premium-pricing-card p,
+.premium-pricing-card .display-1,
+.premium-pricing-card li {
+    color: #ffffff !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.premium-pricing-card .text-accent {
+    color: var(--accent) !important;
+    text-shadow: 0 0 20px rgba(126, 217, 87, 0.5);
+}
+
+.premium-pricing-card .btn-accent {
+    background-color: var(--accent);
+    color: #0b0f14 !important;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.premium-pricing-card .btn-accent:hover {
+    background-color: #fff;
+    color: #000 !important;
+    transform: translateY(-3px);
+}
+
+.pricing-glow {
+    position: absolute;
+    top: -20%;
+    right: -20%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(126, 217, 87, 0.25) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Responsive Fixes */
+@media (max-width: 991px) {
+    .hero-title-main {
+        font-size: 5rem;
+        letter-spacing: -2px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+/* SECTION 4: THE CURATOR'S SELECTION (STATICALIZED) */
+.selection-section {
+    background: #000;
+}
+
+.horizontal-scroll-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.selection-item {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 10%;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.selection-item img {
+    height: 60vh;
+    object-fit: contain;
+}
+
+/* SECTION 1: HERO (STATICALIZED) */
+.hero-bottle-wrap {
+    position: relative;
+    z-index: 5;
+    opacity: 1;
+    transform: none;
+}
+
+/* GSAP Helper Classes (RESET) */
+.gs-reveal,
+.gs-reveal-left,
+.gs-reveal-right {
+    opacity: 1;
+    transform: none;
+}
+
+.animate-bounce {
+    animation: none;
+}

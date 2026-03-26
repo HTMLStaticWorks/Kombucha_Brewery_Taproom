@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | The Fizzy</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link id="bootstrap-link" rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/events-hero.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header (Consistent) -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container pb-3">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span>The Fizzy</span>
+            </a>
+
+            <div class="d-flex align-items-center ms-auto">
+                <div class="theme-controls d-lg-none me-3">
+                    <button id="rtl-toggle-mob" class="control-btn" aria-label="Toggle RTL"><span
+                            class="rtl-text">LTR</span></button>
+                </div>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-inline-start-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu bg-dark border-secondary">
+                            <li><a class="dropdown-item text-white" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item text-white" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="flavors.html">Flavors</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-3">
+                    <a href="login.html" class="btn btn-outline-accent btn-sm me-3">Login</a>
+                    <div class="theme-controls d-none d-lg-flex">
+                        <button id="theme-toggle" class="control-btn"><i class="bi bi-sun"></i></button>
+                        <button id="rtl-toggle" class="control-btn"><span class="rtl-text">LTR</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Content / Pixi Hero -->
+    <section class="events-pixi-hero">
+        <div id="canvas"></div>
+        <div class="events-pixi-content">
+            <h1 class="display-3 fw-bold animate-on-scroll">Happening at <span class="text-accent">The Leaf</span></h1>
+            <p class="lead opacity-75 animate-on-scroll">Live music, community workshops, and exclusive tastings. Join
+                the bubbles!</p>
+        </div>
+    </section>
+
+    <!-- Events Intro Section -->
+    <section class="events-intro-section">
+        <div class="container animate-on-scroll">
+            <span class="text-accent fw-bold text-uppercase letter-spacing-2">Community & Culture</span>
+            <h2 class="events-intro-heading">The Community <span class="text-accent">Calendar</span></h2>
+            <p class="fs-5 opacity-75 max-width-700 mx-auto">Experience the art of living through our curated series of
+                live sessions, artisanal workshops, and exclusive tasting rituals.</p>
+        </div>
+    </section>
+
+    <!-- Premium Events Grid -->
+    <section class="section-padding bg-darker">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Event 1 -->
+                <div class="col-lg-6 col-xl-4 animate-on-scroll">
+                    <div class="premium-event-card">
+                        <div class="event-card-image-wrapper">
+                            <div class="event-date-floating">
+                                <span class="day">25</span>
+                                <span class="month">Mar</span>
+                            </div>
+                            <img src="assets/images/event_music_acoustic.png" alt="Acoustic Sips"
+                                class="event-card-image">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="mt-2 text-accent">Acoustic <br> Sips</h3>
+                            <div class="event-meta-modern">
+                                <span><i class="bi bi-music-note-beamed"></i> Live Performance</span>
+                                <span><i class="bi bi-clock"></i> 7:00 PM</span>
+                            </div>
+                            <p>An intimate evening of acoustic melodies paired with our most experimental small-batch
+                                brews.</p>
+                            <a href="contact.html" class="btn btn-event-premium">Join the Ritual — Free</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="col-lg-6 col-xl-4 animate-on-scroll" style="animation-delay: 0.1s">
+                    <div class="premium-event-card">
+                        <div class="event-card-image-wrapper">
+                            <div class="event-date-floating">
+                                <span class="day">28</span>
+                                <span class="month">Mar</span>
+                            </div>
+                            <img src="assets/images/event_workshop_brewing.png" alt="Kombucha 101"
+                                class="event-card-image">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="mt-2 text-accent">Kombucha <br> Mastery</h3>
+                            <div class="event-meta-modern">
+                                <span><i class="bi bi-gear"></i> Workshop</span>
+                                <span><i class="bi bi-clock"></i> 11:00 AM</span>
+                            </div>
+                            <p>Learn the biological secrets of home brewing. Full extraction kit and starter SCOBY
+                                included.</p>
+                            <a href="contact.html" class="btn btn-event-premium">Reserve Spot — $45</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="col-lg-6 col-xl-4 animate-on-scroll" style="animation-delay: 0.2s">
+                    <div class="premium-event-card">
+                        <div class="event-card-image-wrapper">
+                            <div class="event-date-floating">
+                                <span class="day">05</span>
+                                <span class="month">Apr</span>
+                            </div>
+                            <img src="assets/images/event_tasting_collection.png" alt="Tasting"
+                                class="event-card-image">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="mt-2 text-accent">Seasonal <br> Rituals</h3>
+                            <div class="event-meta-modern">
+                                <span><i class="bi bi-cup-hot"></i> Private Tasting</span>
+                                <span><i class="bi bi-clock"></i> 2:00 PM</span>
+                            </div>
+                            <p>An exclusive preview of our Summer Solstice collection. Taste the evolution of five
+                                unique
+                                blends.</p>
+                            <a href="contact.html" class="btn btn-event-premium">RSVP Invite Required</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elite Event Lounge (Private Bookings) -->
+    <section class="lounge-section">
+        <div class="container overflow-visible">
+            <div class="lounge-grid">
+                <div class="lounge-visual-wrapper animate-on-scroll">
+                    <img src="https://zapdrupalfilesprod.s3.eu-central-1.amazonaws.com/venuesonline/s3fs-public/1Event-Lounge.jpg?VersionId=3pYlto42haldr091nUFus3tud4VS76Ao" alt="Private Lounge" class="lounge-img">
+                </div>
+                <div class="lounge-content animate-on-scroll">
+                    <span class="text-accent fw-bold text-uppercase letter-spacing-2">Private Bookings</span>
+                    <h2 class="display-3 fw-bold mt-3">The Event <br> <span class="text-accent">Lounge</span></h2>
+                    <p class="fs-5 opacity-75 mt-4 mb-5">Host your next milestone in a space that celebrates life,
+                        culture, and conscious luxury. Our private lounge is a sanctuary of emerald velvet and living
+                        fermentation.</p>
+
+                    <div class="lounge-features mt-5">
+                        <div class="lounge-feature-node">
+                            <h4>Bespoke Tap Takeover</h4>
+                            <p>Hand-pick four exclusive brews to serve your guests from our private ritual tap.</p>
+                        </div>
+                        <div class="lounge-feature-node">
+                            <h4>Artisanal Catering</h4>
+                            <p>A plant-based menu curated by local masters to perfectly pair with our flavor profiles.
+                            </p>
+                        </div>
+                        <div class="lounge-feature-node">
+                            <h4>Live Session Curation</h4>
+                            <p>From solo acoustic to deep-house vinyl sets, we curate the sound for your soul.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Hub (Bento Experience) -->
+    <section class="events-bento-section">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll">
+                <span class="text-accent fw-bold text-uppercase letter-spacing-2">Event Rituals</span>
+                <h2 class="display-3 fw-bold mt-3">The Culture <span class="text-accent">Hub</span></h2>
+            </div>
+
+            <div class="event-bento-grid">
+                <div class="event-bento-item item-big animate-on-scroll">
+                    <img src="assets/images/event_bento_people.png" alt="Community" class="event-bento-img">
+                    <div class="event-bento-content">
+                        <span class="text-accent small text-uppercase fw-bold">Connection</span>
+                        <h3>Community Gatherings</h3>
+                        <p class="opacity-75 small">Diverse spirits, shared bubbles, and meaningful conversation.</p>
+                    </div>
+                </div>
+                <div class="event-bento-item item-wide animate-on-scroll" style="animation-delay: 0.1s">
+                    <img src="assets/images/event_bento_eco.png" alt="Zero Waste" class="event-bento-img">
+                    <div class="event-bento-content">
+                        <span class="text-accent small text-uppercase fw-bold">Earth First</span>
+                        <h3>Sustainability Rituals</h3>
+                    </div>
+                </div>
+                <div class="event-bento-item animate-on-scroll" style="animation-delay: 0.2s">
+                    <img src="assets/images/event_bento_harvest.png" alt="Harvest" class="event-bento-img">
+                    <div class="event-bento-content">
+                        <span class="text-accent small text-uppercase fw-bold">Botanicals</span>
+                        <h3>Source Stories</h3>
+                    </div>
+                </div>
+                <div class="event-bento-item animate-on-scroll" style="animation-delay: 0.3s">
+                    <img src="assets/images/flavors.png" alt="Innovation" class="event-bento-img">
+                    <div class="event-bento-content">
+                        <span class="text-accent small text-uppercase fw-bold">Live Lab</span>
+                        <h3>Flavor Lab</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-inline-flex align-items-center mb-4" href="index.html">
+                        <span>The Fizzy</span>
+                    </a>
+                    <p class="opacity-75 mb-4">Dedicated to crafting authentic, organic kombucha that makes you feel
+                        alive. Visit our brewery and taste the difference.</p>
+                    <div class="social-links d-flex gap-3">
+                        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li><a href="about.html" class="footer-link">Our Story</a></li>
+                        <li><a href="flavors.html" class="footer-link">Brews</a></li>
+                        <li><a href="blog.html" class="footer-link">Journal</a></li>
+                        <li><a href="contact.html" class="footer-link">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Brewery Hours</h5>
+                    <ul class="list-unstyled mt-3 opacity-75">
+                        <li class="mb-2">Mon - Fri: 10am - 8pm</li>
+                        <li class="mb-2">Saturday: 9am - 10pm</li>
+                        <li class="mb-2">Sunday: 11am - 6pm</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Newsletter</h5>
+                    <p class="opacity-75 mt-3">Get the latest brew releases and event updates.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-dark border-secondary text-white"
+                                placeholder="your@email.com">
+                            <button class="btn btn-accent">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary">
+            <div class="text-center mt-3 opacity-50">
+                <p>&copy; 2026 The Fizzy Kombucha Brewery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.3/pixi.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pixi-assets.js"></script>
+    <script src="assets/js/events-hero-pixi.js"></script>
+</body>
+
+</html>

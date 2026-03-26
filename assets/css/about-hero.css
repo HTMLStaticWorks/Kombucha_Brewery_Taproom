@@ -7,7 +7,9 @@
 }
 
 .hero-section--bg {
-    background: #0b0f14;
+    background:
+        linear-gradient(90deg, rgba(11, 15, 20, 0.94) 0%, rgba(11, 15, 20, 0.82) 52%, rgba(11, 15, 20, 0.92) 100%),
+        url("../images/taproom-interior.png") center center / cover no-repeat;
     border-radius: 0 0 60px 60px;
     z-index: 1;
     position: relative;

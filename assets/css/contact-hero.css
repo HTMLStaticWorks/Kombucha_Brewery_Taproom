@@ -283,16 +283,24 @@
 
 /* Button */
 .btn-magnetic {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 40px;
     padding: 16px 36px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
+    background: linear-gradient(135deg, #7ed957 0%, #3faa1d 100%);
+    border: 1px solid #3faa1d;
+    color: #041203 !important;
     transition: all 0.3s;
     font-family: 'Outfit';
 }
 
 .btn-magnetic:hover {
+    background: linear-gradient(135deg, #92ec69 0%, #57c82e 100%);
+    color: #041203 !important;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(126, 217, 87, 0.3);
 }
@@ -351,6 +359,19 @@
 }
 
 [data-theme="light"] .contact-hero .btn-magnetic {
-    color: #0b0f14;
+    color: #041203 !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .contact-hero .btn-magnetic:hover {
+    color: #041203 !important;
+}
+
+[data-theme="light"] .contact-hero .avatar-group+span {
+    opacity: 1;
+    color: #273127 !important;
+}
+
+[data-theme="light"] .contact-hero .avatar-group+span strong {
+    color: #0b0f14 !important;
 }

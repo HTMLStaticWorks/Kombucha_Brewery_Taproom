@@ -263,7 +263,10 @@ footer .btn-accent {
     }
 
     .auth-card .d-flex.justify-content-between a {
+        display: block;
+        width: 100%;
         align-self: flex-start;
+        text-align: left;
     }
 }
 
@@ -493,6 +496,13 @@ footer .btn-accent {
     flex-wrap: wrap;
 }
 
+.flavors-hero .hero-actions .btn {
+    min-width: 220px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .flavors-hero,
 .flavors-hero h1,
 .flavors-hero p,
@@ -678,6 +688,13 @@ footer .btn-accent {
     border-radius: 50px;
     font-weight: 600;
     letter-spacing: 1px;
+}
+
+#premium-peek .btn-accent {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #premium-peek .btn-outline-light {

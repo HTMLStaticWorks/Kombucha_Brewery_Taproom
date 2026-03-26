@@ -26,16 +26,25 @@
 
 <body>
 
-    <!-- Header (Consistent) -->
-    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
-        <div class="container pb-3">
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <span>The Fizzy</span>
             </a>
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
+            <div class="d-flex align-items-center ms-auto">
+                <div class="theme-controls d-lg-none me-3">
+                    <button id="rtl-toggle-mob" class="control-btn" aria-label="Toggle RTL"><span
+                            class="rtl-text">LTR</span></button>
+                </div>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-inline-start-auto">
                     <li class="nav-item dropdown">
@@ -53,80 +62,43 @@
 
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
+
+                <div class="d-flex align-items-center ms-3">
+                    <a href="login.html" class="btn btn-outline-accent btn-sm me-3">Login</a>
+                    <div class="theme-controls d-none d-lg-flex">
+                        <button id="theme-toggle" class="control-btn" title="Toggle Dark/Light Mode"><i
+                                class="bi bi-sun"></i></button>
+                        <button id="rtl-toggle" class="control-btn" title="Toggle LTR/RTL"><span
+                                class="rtl-text">LTR</span></button>
+
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- New Laboratory Slider -->
-    <header class="flavors-slider-container">
-        <div class="flavors-main-slider">
-            <div class="box1 box">
-                <div class="bg-skew"></div>
-                <div class="details">
-                    <h1>Ginger Burst</h1>
-                    <p>Sharp, spicy, and incredibly refreshing. Cold-pressed organic ginger roots meet our heirloom
-                        culture.</p>
-                    <button class="btn px-4 py-2 rounded-pill fw-bold">Try Now</button>
+    <!-- Signature Hero -->
+    <section class="flavors-hero">
+        <div class="flavors-hero-grid container">
+            <div class="flavors-hero-copy">
+                <span class="hero-kicker">Signature Rituals</span>
+                <h1>Living flavors tuned for <span class="text-accent">mindful sipping</span></h1>
+                <p class="hero-lead">
+                    Every batch begins with heirloom tea leaves aged in volcanic soil, married to rare botanicals and
+                    fermented with a century-old culture so the flavor keeps evolving with every pour.
+                </p>
+                <div class="hero-actions">
+                    <a href="#seasonal-release" class="btn btn-accent btn-lg">Discover Releases</a>
+                    <a href="pricing.html" class="btn btn-outline-light btn-lg">Reserve a Batch</a>
                 </div>
-                <div class="illustration"><img src="assets/images/slider-1.png" alt="Ginger"></div>
             </div>
-
-            <div class="box2 box">
-                <div class="bg-skew"></div>
-                <div class="details">
-                    <h1>Wild Berry</h1>
-                    <p>A symphony of alpine berries—blackberries, blueberries, and raspberries—infused with violet
-                        notes.</p>
-                    <button class="btn px-4 py-2 rounded-pill fw-bold">Try Now</button>
-                </div>
-                <div class="illustration"><img src="assets/images/slider-2.png" alt="Berry"></div>
-            </div>
-
-            <div class="box3 box">
-                <div class="bg-skew"></div>
-                <div class="details">
-                    <h1>Lemon Mint</h1>
-                    <p>Garden-fresh mint leaves steeping with Meyer lemons to provide clarity and absolute refreshment.
-                    </p>
-                    <button class="btn px-4 py-2 rounded-pill fw-bold">Try Now</button>
-                </div>
-                <div class="illustration"><img src="assets/images/slider-3.png" alt="Mint"></div>
-            </div>
-
-            <div class="box4 box">
-                <div class="bg-skew"></div>
-                <div class="details">
-                    <h1>Hibiscus</h1>
-                    <p>Sun-dried hibiscus flowers providing a tart, cranberry-like profile with a deep ruby hue.</p>
-                    <button class="btn px-4 py-2 rounded-pill fw-bold">Try Now</button>
-                </div>
-                <div class="illustration"><img src="assets/images/slider-4.png" alt="Hibiscus"></div>
-            </div>
-
-            <div class="box5 box">
-                <div class="bg-skew"></div>
-                <div class="details">
-                    <h1>Pure Classic</h1>
-                    <p>The original unadulterated kombucha experience. High-altitude black tea fermented to perfection.
-                    </p>
-                    <button class="btn px-4 py-2 rounded-pill fw-bold">Try Now</button>
-                </div>
-                <div class="illustration"><img src="assets/images/hero_bottle.png" alt="Classic"></div>
+            <div class="flavors-hero-image">
+                <div class="hero-orb orb-one"></div>
+                <div class="hero-orb orb-two"></div>
+                <img class="hero-bottle" src="assets/images/wellness_brew.png" alt="Living Brew">
             </div>
         </div>
-
-        <!-- Navigation -->
-        <button class="slider-prev"><i class="bi bi-chevron-left"></i></button>
-        <button class="slider-next"><i class="bi bi-chevron-right"></i></button>
-
-        <div class="slider-trail">
-            <div class="trail-item active"></div>
-            <div class="trail-item"></div>
-            <div class="trail-item"></div>
-            <div class="trail-item"></div>
-            <div class="trail-item"></div>
-        </div>
-    </header>
+    </section>
 
     <!-- Signature Collection Grid -->
     <section class="section-padding bg-darker">
@@ -141,7 +113,7 @@
             <div class="row g-4 mt-5">
                 <!-- Flavor 1 -->
                 <div class="col-lg-4 animate-on-scroll">
-                    <div class="glass-card hover-lift p-4 h-100">
+                    <div class="glass-card hover-lift p-4 h-100" id="ginger-ritual">
                         <div class="flavor-img-wrap mb-4 bg-secondary rounded-4 p-3">
                             <img src="assets/images/hero_bottle.png" alt="Pure Ginger" class="img-fluid">
                         </div>
@@ -163,7 +135,7 @@
 
                 <!-- Flavor 2 -->
                 <div class="col-lg-4 animate-on-scroll" style="animation-delay: 0.1s">
-                    <div class="glass-card hover-lift p-4 h-100 border-accent">
+                    <div class="glass-card hover-lift p-4 h-100 border-accent" id="wild-berry-bloom">
                         <div class="flavor-img-wrap mb-4 bg-secondary rounded-4 p-3">
                             <img src="assets/images/flavors.png" alt="Wild Berry" class="img-fluid">
                         </div>
@@ -184,7 +156,7 @@
 
                 <!-- Flavor 3 -->
                 <div class="col-lg-4 animate-on-scroll" style="animation-delay: 0.2s">
-                    <div class="glass-card hover-lift p-4 h-100">
+                    <div class="glass-card hover-lift p-4 h-100" id="emerald-mint">
                         <div class="flavor-img-wrap mb-4 bg-secondary rounded-4 p-3">
                             <img src="assets/images/flavor_profile.png" alt="Lemon Mint" class="img-fluid"
                                 style="filter: hue-rotate(90deg)">

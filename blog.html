@@ -32,10 +32,18 @@
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <span>The Fizzy</span>
             </a>
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
+            <div class="d-flex align-items-center ms-auto">
+                <div class="theme-controls d-lg-none me-3">
+                    <button id="rtl-toggle-mob" class="control-btn" aria-label="Toggle RTL"><span
+                            class="rtl-text">LTR</span></button>
+                </div>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-inline-start-auto">
                     <li class="nav-item dropdown">
@@ -53,96 +61,38 @@
 
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-                <div class="theme-controls d-none d-lg-flex ms-3">
-                    <button id="theme-toggle" class="control-btn"><i class="bi bi-sun"></i></button>
-                    <button id="rtl-toggle" class="control-btn"><span class="rtl-text">LTR</span></button>
+                <div class="d-flex align-items-center ms-3">
+                    <a href="login.html" class="btn btn-outline-accent btn-sm me-3">Login</a>
+                    <div class="theme-controls d-none d-lg-flex">
+                        <button id="theme-toggle" class="control-btn"><i class="bi bi-sun"></i></button>
+                        <button id="rtl-toggle" class="control-btn"><span class="rtl-text">LTR</span></button>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Skewed Hero Section -->
-    <section class="skw-pages">
-        <div class="skw-page skw-page-1 active">
-            <div class="skw-page__half skw-page__half--left">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content"></div>
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="blog-hero-glow"></div>
+        <div class="container blog-hero-wrap">
+            <div class="blog-hero-content">
+                <p class="hero-pretitle">Brew Journal</p>
+                <h1>Stories that keep <span class="text-accent">kombucha alive</span></h1>
+                <p class="lead">
+                    We share the rituals, science, and people behind our living brews—from rural tea gardens to the
+                    taproom.
+                </p>
+                <div class="blog-hero-actions">
+                    <a href="#articles" class="btn btn-accent btn-lg">Read the Journal</a>
+                    <a href="events.html" class="btn btn-outline-light btn-lg">Visit the Taproom</a>
                 </div>
             </div>
-            <div class="skw-page__half skw-page__half--right">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content">
-                        <h2 class="skw-page__heading"><span class="text-accent">Culture</span> & Craft</h2>
-                        <p class="skw-page__description">Discover the journal of The Fizzy.<br>Scroll downwards to
-                            explore.</p>
-                    </div>
+            <div class="blog-hero-image">
+                <div class="image-frame">
+                    <img src="assets/images/event_lounge_interior.png" alt="Creative Brew">
                 </div>
-            </div>
-        </div>
-        <div class="skw-page skw-page-2">
-            <div class="skw-page__half skw-page__half--left">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content">
-                        <h2 class="skw-page__heading text-accent">Organic Symphony</h2>
-                        <p class="skw-page__description">From high-altitude tea leaves to deep earth roots.<br>Our
-                            ingredients matter.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="skw-page__half skw-page__half--right">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content"></div>
-                </div>
-            </div>
-        </div>
-        <div class="skw-page skw-page-3">
-            <div class="skw-page__half skw-page__half--left">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content"></div>
-                </div>
-            </div>
-            <div class="skw-page__half skw-page__half--right">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content">
-                        <h2 class="skw-page__heading text-accent">Vitality Within</h2>
-                        <p class="skw-page__description">Gut health meets absolute clarity.<br>The science behind our
-                            brew.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="skw-page skw-page-4">
-            <div class="skw-page__half skw-page__half--left">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content">
-                        <h2 class="skw-page__heading text-accent">Sustainable Roots</h2>
-                        <p class="skw-page__description">Zero waste initiatives and local farm
-                            partnerships.<br>Respecting the earth.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="skw-page__half skw-page__half--right">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content"></div>
-                </div>
-            </div>
-        </div>
-        <div class="skw-page skw-page-5">
-            <div class="skw-page__half skw-page__half--left">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content"></div>
-                </div>
-            </div>
-            <div class="skw-page__half skw-page__half--right">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content">
-                        <h2 class="skw-page__heading text-accent">The Journal</h2>
-                        <p class="skw-page__description">
-                            Welcome to the archives.<br>
-                            <a class="skw-page__link" href="#premium-peek">Read latest stories 👇</a>
-                        </p>
-                    </div>
-                </div>
+                <div class="floating-orb"></div>
             </div>
         </div>
     </section>
@@ -178,7 +128,7 @@
     </section>
 
     <!-- Blog Container -->
-    <section class="section-padding">
+    <section class="section-padding" id="blog-articles">
         <div class="container">
             <div class="row g-5">
                 <!-- Blog Preview Main -->
@@ -192,7 +142,7 @@
                                     Your Best Friend</a></h2>
                             <p class="opacity-75 fs-5 max-width-600 mb-4">Kombucha is more than just a fizzy drink. It’s
                                 a centuries-old tradition that supports your gut health and boosts your immunity.</p>
-                            <a href="blog-details.html" class="btn btn-accent px-5">Continue Reading Story</a>
+                        <a href="blog-details.html" class="btn btn-accent px-5 continue-reading-btn">Continue Reading Story</a>
                         </div>
                     </article>
 
@@ -210,7 +160,7 @@
                                     Secondary Fermentation</a></h3>
                             <p class="opacity-75">Getting that signature sparkle at home can be tricky. Here are Leo’s
                                 top 5 tips for the best carbonation in every bottle.</p>
-                            <a href="blog-details.html" class="text-accent fw-bold">Read More <i
+                            <a href="blog-details.html" class="text-accent fw-bold blog-card-link">Read More <i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -227,7 +177,7 @@
                                     Tea Leaves to Compost</a></h3>
                             <p class="opacity-75">Learn how we repurposed 1,000kg of organic waste last year into the
                                 brewery’s community garden.</p>
-                            <a href="blog-details.html" class="text-accent fw-bold">Read More <i
+                            <a href="blog-details.html" class="text-accent fw-bold blog-card-link">Read More <i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -235,9 +185,9 @@
 
                 <!-- Sidebar -->
                 <div class="col-lg-4 animate-on-scroll" style="animation-delay: 0.3s">
-                    <div class="bg-secondary p-4 rounded-4 border border-secondary mb-5 shadow-sm">
+                    <div class="bg-secondary p-4 rounded-4 border border-secondary mb-5 shadow-sm blog-category-card">
                         <h4 class="mb-4">Categories</h4>
-                        <ul class="list-unstyled">
+                        <ul class="list-unstyled blog-category-list">
                             <li class="mb-3 text-accent fw-bold p-2 bg-dark rounded d-flex justify-content-between">
                                 <span>Wellness</span> <span>12</span>
                             </li>
@@ -289,7 +239,7 @@
     <section id="seasonal-harvest" class="bg-primary section-padding border-top border-secondary">
         <div class="container">
             <div class="row align-items-center mb-5">
-                <div class="col-lg-6 animate-on-scroll">
+                <div class="col-lg-6 animate-on-scroll seasonal-heading">
                     <span class="premium-tag mb-3 d-inline-block">Seasonal Notes</span>
                     <h2 class="display-3 fw-bold mb-4">Our <span class="text-accent">Harvest</span> Rhythm</h2>
                 </div>
@@ -317,7 +267,7 @@
                             <h5 class="mb-0">Next Batch</h5>
                         </div>
                         <p class="small opacity-75">Organic White Peach & Ginger infusion arriving this April.</p>
-                        <a href="#" class="text-accent small fw-bold">Pre-order Now <i
+                        <a href="#" class="text-accent small fw-bold harvest-note-link">Pre-order Now <i
                                 class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>

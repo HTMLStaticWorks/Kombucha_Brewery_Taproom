@@ -89,11 +89,12 @@ body {
 .intelligence-section {
     position: relative;
     z-index: 20;
-    margin-top: -80px;
+    margin-top: 4rem;
+    padding-top: 4rem;
 }
 
 .stat-card {
-    background: var(--glass);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 5%, rgba(255, 255, 255, 0.02) 100%);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -102,6 +103,11 @@ body {
     text-align: center;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
     height: 100%;
+    color: var(--text-color);
+}
+
+.intelligence-section .row {
+    align-items: stretch;
 }
 
 .stat-card:hover {
@@ -116,6 +122,11 @@ body {
     color: var(--accent);
     margin-bottom: 0.5rem;
     font-family: 'Outfit';
+}
+
+.stat-card h5,
+.stat-card p {
+    text-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 }
 
 /* SECTION 3: THE FERMENTATION CYCLE (TIMELINE) */
@@ -150,6 +161,17 @@ body {
     transform: translateX(-50%);
 }
 
+@media (max-width: 768px) {
+    .cycle-step {
+        padding-left: 3rem;
+    }
+
+    .cycle-dot,
+    .cycle-line {
+        left: 2rem;
+    }
+}
+
 /* SECTION 4: THE CURATOR'S SELECTION (MOVED BELOW) */
 
 
@@ -160,15 +182,14 @@ body {
 }
 
 .portal-img-container {
-    border-radius: 50px 0 0 50px;
-    overflow: hidden;
-    height: 600px;
+    padding: 2rem;
 }
 
 .portal-img {
     width: 100%;
-    height: 100%;
+    height: 480px;
     object-fit: cover;
+    border-radius: 30px;
     transition: transform 1s;
 }
 
@@ -183,21 +204,52 @@ body {
 }
 
 .premium-pricing-card {
-    background: linear-gradient(135deg, rgba(26, 38, 52, 0.8), rgba(11, 15, 20, 0.8));
+    background: linear-gradient(rgba(11, 15, 20, 0.8), rgba(0, 0, 0, 0.85)), url('../images/premium-editorial.png');
+    background-size: cover;
+    background-position: center;
     border-radius: 40px;
-    padding: 4rem;
-    border: 1px solid rgba(126, 217, 87, 0.2);
+    padding: 5rem 4rem;
+    border: 1px solid rgba(126, 217, 87, 0.3);
     position: relative;
     overflow: hidden;
+    color: #fff;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.7);
+}
+
+.premium-pricing-card h2,
+.premium-pricing-card p,
+.premium-pricing-card .display-1,
+.premium-pricing-card li {
+    color: #ffffff !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.premium-pricing-card .text-accent {
+    color: var(--accent) !important;
+    text-shadow: 0 0 20px rgba(126, 217, 87, 0.5);
+}
+
+.premium-pricing-card .btn-accent {
+    background-color: var(--accent);
+    color: #0b0f14 !important;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.premium-pricing-card .btn-accent:hover {
+    background-color: #fff;
+    color: #000 !important;
+    transform: translateY(-3px);
 }
 
 .pricing-glow {
     position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(126, 217, 87, 0.1) 0%, transparent 70%);
+    top: -20%;
+    right: -20%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(126, 217, 87, 0.25) 0%, transparent 70%);
+    pointer-events: none;
 }
 
 /* Responsive Fixes */

@@ -32,10 +32,18 @@
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <span>The Fizzy</span>
             </a>
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
+            <div class="d-flex align-items-center ms-auto">
+                <div class="theme-controls d-lg-none me-3">
+                    <button id="rtl-toggle-mob" class="control-btn" aria-label="Toggle RTL"><span
+                            class="rtl-text">LTR</span></button>
+                </div>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-inline-start-auto">
                     <li class="nav-item dropdown">
@@ -135,7 +143,7 @@
             <div class="row g-5">
                 <!-- Contact Details -->
                 <div class="col-lg-5 animate-on-scroll">
-                    <div class="p-5 bg-dark rounded-5 border border-secondary shadow h-100">
+                    <div class="p-5 bg-dark rounded-5 border border-secondary shadow h-100 text-white">
                         <h2 class="mb-4 text-white">Get in <span class="text-accent">Touch</span></h2>
                         <ul class="list-unstyled mb-5">
                             <li class="fs-5 mb-4 d-flex align-items-center"><i
@@ -229,7 +237,9 @@
                             <p class="small opacity-50 mb-0">Waste</p>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-outline-accent btn-lg px-5">Book a Tour</a>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a href="#" class="btn btn-outline-accent btn-lg px-5">Book a Tour</a>
+                    </div>
                 </div>
                 <div class="col-lg-6 animate-on-scroll" style="animation-delay: 0.2s">
                     <div class="experience-image-wrapper position-relative">
@@ -255,7 +265,7 @@
     </section>
 
     <!-- Section 2: Values & Quick Help (New Unique Section) -->
-    <section class="section-padding bg-darker diagonal-reveal">
+    <section class="section-padding bg-darker diagonal-reveal more-connect">
         <div class="container text-center pt-5">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 animate-on-scroll">

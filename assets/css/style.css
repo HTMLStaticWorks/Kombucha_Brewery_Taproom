@@ -138,6 +138,50 @@ h6 {
     width: 100%;
 }
 
+/* Dark theme dropdown visibility */
+[data-theme="dark"] .dropdown-menu {
+    background-color: var(--primary-color) !important;
+    border-color: rgba(255, 255, 255, 0.14) !important;
+}
+
+[data-theme="dark"] .dropdown-menu .dropdown-item {
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .dropdown-menu .dropdown-item:hover,
+[data-theme="dark"] .dropdown-menu .dropdown-item:focus {
+    background-color: rgba(126, 217, 87, 0.16) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .dropdown-menu .dropdown-item.active,
+[data-theme="dark"] .dropdown-menu .dropdown-item:active {
+    background-color: var(--accent-color) !important;
+    color: var(--primary-color) !important;
+}
+
+/* Light theme dropdown visibility */
+[data-theme="light"] .dropdown-menu {
+    background-color: var(--primary-color) !important;
+    border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+[data-theme="light"] .dropdown-menu .dropdown-item {
+    color: var(--text-color) !important;
+}
+
+[data-theme="light"] .dropdown-menu .dropdown-item:hover,
+[data-theme="light"] .dropdown-menu .dropdown-item:focus {
+    background-color: rgba(126, 217, 87, 0.2) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="light"] .dropdown-menu .dropdown-item.active,
+[data-theme="light"] .dropdown-menu .dropdown-item:active {
+    background-color: var(--accent-color) !important;
+    color: var(--primary-color) !important;
+}
+
 /* Buttons */
 .btn-accent {
     background: linear-gradient(135deg, #7ed957 0%, #3faa1d 100%);
@@ -1769,6 +1813,10 @@ body {
     box-shadow: 0 50px 100px rgba(0, 0, 0, 0.15);
 }
 
+[data-theme="dark"] .flavor-profile-container {
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
 .flavor-profile-grid {
     display: flex;
     flex-wrap: wrap;
@@ -1786,6 +1834,12 @@ body {
     border: 1px solid rgba(var(--glass-border, 255, 255, 255), 0.1);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     backdrop-filter: blur(10px);
+}
+
+[data-theme="dark"] .flavor-node {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
 }
 
 .flavor-node:hover {
@@ -1826,6 +1880,10 @@ body {
     border-radius: 10px;
     margin-top: 1.5rem;
     overflow: hidden;
+}
+
+[data-theme="dark"] .taste-meter {
+    background: rgba(255, 255, 255, 0.16);
 }
 
 .taste-fill {

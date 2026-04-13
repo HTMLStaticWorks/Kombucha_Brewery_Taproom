@@ -89,7 +89,7 @@ h6 {
 
 /* Keep h2 size consistent across all pages/components */
 h2 {
-    font-size: clamp(2rem, 4vw, 3rem) !important;
+    font-size: clamp(2.2rem, 5vw, 3.5rem) !important;
 }
 
 /* Logical Properties for RTL Support */
@@ -107,6 +107,10 @@ h2 {
     backdrop-filter: blur(10px);
     transition: var(--transition);
     padding: 1rem 0;
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.95)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .navbar-brand {
@@ -141,6 +145,15 @@ h2 {
 .nav-link:not(.dropdown-toggle):hover::after,
 .nav-link:not(.dropdown-toggle).active::after {
     width: 100%;
+}
+
+/* Center Navbar Dropdowns on Desktop */
+@media (min-width: 992px) {
+    .navbar-nav .dropdown-menu {
+        left: 50% !important;
+        right: auto !important;
+        transform: translateX(-50%) !important;
+    }
 }
 
 /* Dark theme dropdown visibility */
@@ -255,6 +268,10 @@ footer .btn-accent {
     color: #f8fbff;
 }
 
+.auth-card h2 {
+    font-size: 1.5rem !important;
+}
+
 [data-theme="light"] .auth-card {
     background: #ffffff;
     border: 1px solid rgba(11, 15, 20, 0.08);
@@ -277,6 +294,10 @@ footer .btn-accent {
     color: #ffffff;
 }
 
+.auth-card .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
 [data-theme="light"] .auth-card .form-control {
     background: #f1f3f5;
     border-color: #dee2e6;
@@ -287,6 +308,10 @@ footer .btn-accent {
     background: #ffffff;
     border-color: var(--accent-color);
     color: #0b0f14;
+}
+
+[data-theme="light"] .auth-card .form-control::placeholder {
+    color: rgba(11, 15, 20, 0.4);
 }
 
 .auth-card h2,
@@ -320,6 +345,32 @@ footer .btn-accent {
 .auth-card .btn-outline-light .bi {
     color: inherit;
     filter: drop-shadow(0 0 2px rgba(11, 15, 20, 0.2));
+}
+
+/* Password Toggle Style */
+.password-field-container {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--text-color);
+    opacity: 0.6;
+    transition: var(--transition);
+    z-index: 10;
+}
+
+.password-toggle:hover {
+    opacity: 1;
+    color: var(--accent-color);
+}
+
+[data-theme="light"] .password-toggle {
+    color: #0b0f14;
 }
 
 /* End Auth-Card Theme Overrides */
@@ -743,7 +794,66 @@ footer .btn-accent {
     background-color: #f4fbf4 !important;
 }
 
-/* Scrolling Animations foundations */
+/* Flavors page: keep Classics card badge text readable in light theme */
+[data-theme="light"] #ginger-ritual .badge.bg-dark,
+[data-theme="light"] #wild-berry-bloom .badge.bg-dark,
+[data-theme="light"] #emerald-mint .badge.bg-dark {
+    background-color: #1f252b !important;
+    color: #f5f8fb !important;
+    border-color: #3c4650 !important;
+}
+
+[data-theme="light"] #wild-berry-bloom .badge.bg-accent {
+    background-color: var(--accent-color) !important;
+    color: #112a0d !important;
+}
+
+/* Contact page: improve Get in Touch contrast in light theme */
+[data-theme="light"] #contact-section .col-lg-5>.p-5.bg-dark {
+    color: #1f252b !important;
+}
+
+[data-theme="light"] #contact-section .col-lg-5>.p-5.bg-dark .text-white,
+[data-theme="light"] #contact-section .col-lg-5>.p-5.bg-dark li,
+[data-theme="light"] #contact-section .col-lg-5>.p-5.bg-dark p {
+    color: #1f252b !important;
+}
+
+/* Social Buttons Contact Page */
+.social-btn-contact {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(126, 217, 87, 0.2);
+    color: var(--accent-color, #7ed957) !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-btn-contact:hover {
+    background: var(--accent-color, #7ed957);
+    color: #0b0f14 !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(126, 217, 87, 0.3);
+}
+
+[data-theme="light"] .social-btn-contact {
+    background: #ffffff;
+    border-color: #dee2e6;
+    color: #3faa1d !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .social-btn-contact:hover {
+    background: #3faa1d;
+    color: #ffffff !important;
+    border-color: #3faa1d;
+}
+
 .animate-on-scroll {
     opacity: 0;
     transform: translateY(30px);
@@ -1255,19 +1365,19 @@ footer .btn-accent {
     .ingredients-viewport {
         display: block;
         z-index: 1;
-        opacity: 0.9;
+        opacity: 1;
     }
 
     .ingredient-section {
-        background-color: rgba(201, 231, 138, 0.35);
+        background-color: var(--ginger-bg);
     }
 
     .ingredient-section:nth-child(2) {
-        background-color: rgba(255, 178, 178, 0.35);
+        background-color: var(--berry-bg);
     }
 
     .ingredient-section:nth-child(3) {
-        background-color: rgba(193, 191, 242, 0.35);
+        background-color: var(--classic-bg);
     }
 }
 
@@ -1342,7 +1452,7 @@ footer .btn-accent {
     }
 
     .flavor-row .flavor-image-container {
-        height: 220px;
+        height: 260px;
     }
 
     .flavor-row .learn-more-btn {
@@ -1353,20 +1463,21 @@ footer .btn-accent {
 
 .flavor-image-container {
     width: 100%;
-    height: 280px;
+    height: 260px; /* Increased from 200px */
+    overflow: hidden;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
     position: relative;
     z-index: 1;
-    animation: float 6s ease-in-out infinite;
 }
 
 .flavor-image {
-    max-width: 85%;
-    max-height: 85%;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -1837,7 +1948,6 @@ body {
 }
 
 .stat-box h2 {
-    font-size: 2.5rem;
     color: var(--accent-color);
     margin-bottom: 0.5rem;
 }
@@ -2910,6 +3020,14 @@ body {
 }
 
 @media (max-width: 1200px) {
+    .master-craft-section {
+        padding-block: 6rem;
+    }
+
+    .harvest-section {
+        padding-block: 4rem;
+    }
+
     .craft-feature-item {
         position: static;
         width: 100%;
@@ -2920,6 +3038,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-block: 2rem;
     }
 
     .craft-main-image {
@@ -3740,7 +3859,6 @@ body {
 }
 
 .wholesale-content h2 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 800;
     font-family: 'Outfit', sans-serif;
     line-height: 1.1;

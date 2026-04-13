@@ -59,8 +59,13 @@
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="password"
-                                    placeholder="Enter your password" required>
+                                <div class="password-field-container">
+                                    <input type="password" class="form-control" id="password"
+                                        placeholder="Enter your password" required>
+                                    <span class="password-toggle" onclick="togglePassword('password', this)">
+                                        <i class="bi bi-eye"></i>
+                                    </span>
+                                </div>
                             </div>
                             <div class="d-flex justify-content-between align-items-center mb-4">
                                 <div class="form-check">
@@ -86,9 +91,6 @@
                                 </button>
                                 <button class="btn btn-outline-light flex-fill">
                                     <i class="bi bi-apple me-2"></i>Apple
-                                </button>
-                                <button class="btn btn-outline-light flex-fill">
-                                    <i class="bi bi-twitter-x me-2"></i>Twitter
                                 </button>
                             </div>
                         </div>

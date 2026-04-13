@@ -87,6 +87,11 @@ h6 {
     line-height: 1.2;
 }
 
+/* Keep h2 size consistent across all pages/components */
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem) !important;
+}
+
 /* Logical Properties for RTL Support */
 .section-padding {
     padding-block: 5rem;
@@ -122,7 +127,7 @@ h6 {
     color: var(--accent-color) !important;
 }
 
-.nav-link::after {
+.nav-link:not(.dropdown-toggle)::after {
     content: '';
     position: absolute;
     width: 0;
@@ -133,8 +138,8 @@ h6 {
     transition: var(--transition);
 }
 
-.nav-link:hover::after,
-.nav-link.active::after {
+.nav-link:not(.dropdown-toggle):hover::after,
+.nav-link:not(.dropdown-toggle).active::after {
     width: 100%;
 }
 
@@ -254,6 +259,33 @@ footer .btn-accent {
     background: #ffffff;
     border: 1px solid rgba(11, 15, 20, 0.08);
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.06);
+    color: #0b0f14;
+}
+
+.auth-card .form-control {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+}
+
+.auth-card .form-control:focus {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--accent-color);
+    box-shadow: none;
+    color: #ffffff;
+}
+
+[data-theme="light"] .auth-card .form-control {
+    background: #f1f3f5;
+    border-color: #dee2e6;
+    color: #0b0f14;
+}
+
+[data-theme="light"] .auth-card .form-control:focus {
+    background: #ffffff;
+    border-color: var(--accent-color);
     color: #0b0f14;
 }
 
@@ -703,6 +735,12 @@ footer .btn-accent {
 
 .bg-darker {
     background-color: #06090c;
+}
+
+/* Brighter section backgrounds in light mode */
+[data-theme="light"] .bg-darker,
+[data-theme="light"] .bg-dark {
+    background-color: #f4fbf4 !important;
 }
 
 /* Scrolling Animations foundations */
@@ -1326,8 +1364,8 @@ footer .btn-accent {
 }
 
 .flavor-image {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 85%;
+    max-height: 85%;
     object-fit: contain;
     transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -1394,7 +1432,7 @@ footer .btn-accent {
 footer {
     background-color: var(--primary-color);
     padding-top: 5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0;
     border-top: 1px solid rgba(var(--glass-border), 0.1);
 }
 
@@ -2782,18 +2820,22 @@ body {
 
 .feature-pos-1 {
     top: 0;
-    left: -100px;
+    left: -150px;
 }
 
 .feature-pos-2 {
-    top: 50%;
+    top: 0;
     right: -150px;
-    transform: translateY(-50%);
 }
 
 .feature-pos-3 {
     bottom: 0;
-    left: -100px;
+    left: -150px;
+}
+
+.feature-pos-4 {
+    bottom: 0;
+    right: -150px;
 }
 
 /* Global Harvest (Source Bento Box) */

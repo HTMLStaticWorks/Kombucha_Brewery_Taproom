@@ -340,11 +340,34 @@ footer .btn-accent {
     color: #0b0f14;
     border-color: rgba(11, 15, 20, 0.2);
     background-color: rgba(255, 255, 255, 0.85);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .auth-card .btn-outline-light .bi {
     color: inherit;
     filter: drop-shadow(0 0 2px rgba(11, 15, 20, 0.2));
+}
+
+@media (max-width: 991px) {
+    .auth-card .d-flex.gap-3.justify-content-center {
+        gap: 0.75rem !important;
+    }
+
+    .auth-card .btn-outline-light {
+        flex-direction: column;
+        padding: 0.8rem 0.5rem;
+        font-size: 0.85rem;
+        min-height: 70px;
+    }
+
+    .auth-card .btn-outline-light .bi {
+        margin-right: 0 !important;
+        margin-bottom: 0.25rem;
+        font-size: 1.25rem;
+        display: block;
+    }
 }
 
 /* Password Toggle Style */
@@ -653,13 +676,7 @@ footer .btn-accent {
     color: #0b0f14;
 }
 
-@media (prefers-color-scheme: light) {
-    .flavors-hero {
-        background: radial-gradient(circle at 50% 10%, rgba(126, 217, 87, 0.35), transparent 55%),
-            #f4f7f5;
-    }
-}
-
+/* Light theme override for Flavors Hero */
 [data-theme="light"] .flavors-hero {
     background: radial-gradient(circle at 50% 10%, rgba(126, 217, 87, 0.35), transparent 55%),
         #f4f7f5;
@@ -1452,7 +1469,7 @@ footer .btn-accent {
     }
 
     .flavor-row .flavor-image-container {
-        height: 260px;
+        height: 220px;
     }
 
     .flavor-row .learn-more-btn {
@@ -1463,7 +1480,7 @@ footer .btn-accent {
 
 .flavor-image-container {
     width: 100%;
-    height: 260px; /* Increased from 200px */
+    height: 220px;
     overflow: hidden;
     border-radius: 20px;
     display: flex;
